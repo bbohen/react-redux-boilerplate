@@ -6,28 +6,31 @@ import styled from 'styled-components';
 import 'normalize.css';
 
 import Home from './containers/Home';
+import Navigation from './components/Navigation';
 import NotFound from './components/NotFound';
 
 const Wrapper = styled.div`
+  display: flex;
   position: absolute;
   height: 100%;
   width: 100%;
   background: Ivory;
   color: DarkSlateGray;
+`;
+
+const Content = styled.div`
+  width: 80%;
   padding: 1em;
 `;
 
 const App = () => (
   <BrowserRouter>
     <Wrapper>
-      <h1>React Redux Boilerplate</h1>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/cats">Cats</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
-      <Match exactly pattern="/" component={Home} />
-      <Miss component={NotFound} />
+      <Navigation />
+      <Content>
+        <Match exactly pattern="/" component={Home} />
+        <Miss component={NotFound} />
+      </Content>
     </Wrapper>
   </BrowserRouter>
 );

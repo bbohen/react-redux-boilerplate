@@ -1,7 +1,9 @@
 import React from 'react';
 
+import Heading from './Heading';
+
 const NotFound = () => (
-  <h1>Not Found!</h1>
+  <Heading>Not Found!</Heading>
 );
 
 export default NotFound;
