@@ -5,17 +5,18 @@ module.exports = {
   output: {
     filename: 'bundle.js',
   },
-  devtool: 'cheap-eval-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-          },
-        ],
+        loader: 'babel-loader',
+        // use: [
+        //   {
+        //     loader: 'babel-loader',
+        //   },
+        // ],
       },
       {
         test: /\.css$/,

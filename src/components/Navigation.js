@@ -7,7 +7,7 @@ import Heading from './Heading';
 const Navigation = () => {
   const Wrapper = styled.div`
     width: 20%;
-    padding: 1em;
+    padding: 1em 0 1em 1em;
   `;
 
   const NavigationItem = styled.li`
