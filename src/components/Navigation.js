@@ -6,8 +6,6 @@ import Heading from './Heading';
 
 const Navigation = () => {
   const Wrapper = styled.div`
-    background-color: teal;
-    color: ivory;
     width: 20%;
     padding: 1em;
   `;
@@ -23,15 +21,17 @@ const Navigation = () => {
   `;
 
   const NavigationHeaderLink = styled(Link)`
-    color: ivory;
+    color: teal;
     text-decoration: none;
+    font-weight: 300;
   `;
 
   const NavigationLink = styled(Link)`
     border-bottom: 1px solid ivory;
-    color: ivory;
+    color: teal;
     display: block;
-    font-weight: bolder;
+    font-weight: 300;
+    letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
   `;

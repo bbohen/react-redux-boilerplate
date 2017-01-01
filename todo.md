@@ -4,6 +4,7 @@
     * optimize / code-split
     * webpack production config with opts
 * redux
+* redux-dev-tools
 * react-redux 5
 * redux-pack
 * jest
