@@ -7,6 +7,8 @@
 * redux-dev-tools
 * react-redux 5
 * redux-pack
+    * move fetch to its own file
+* redux-form?
 * jest
 * separate file for routes?
 * aliasing
