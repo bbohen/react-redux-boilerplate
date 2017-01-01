@@ -9,6 +9,7 @@
 * redux-pack
 * jest
 * separate file for routes?
+* aliasing
 * content
     * home - basic info and stuff
     * cats - cat pics from reddit using reddit api and redux-pack

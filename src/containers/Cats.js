@@ -1,10 +1,17 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import Heading from '../components/Heading';
 import { trigger } from '../redux/modules/cats';
 
 class Cats extends Component {
+  static propTypes = {
+    cats: PropTypes.shape.isRequired,
+  }
+
+  componentWillMount() {
+    this.props.cats.load();
+  }
+
   render() {
     return (
       <div onClick={() => this.props.trigger()}>
