@@ -5,12 +5,8 @@ import { BrowserRouter, Match, Miss } from 'react-router';
 
 import './setup.css';
 
-import Cats from './containers/Cats';
-import Home from './containers/Home';
-import AppWrapper from './components/AppWrapper';
-import MainContent from './components/MainContent';
-import Navigation from './components/Navigation';
-import NotFound from './components/NotFound';
+import { AppWrapper, MainContent, Navigation, NotFound } from './components';
+import { Cats, Home } from './containers';
 import initializeStore from './redux/init';
 
 const store = initializeStore();
@@ -29,7 +25,6 @@ const App = () => (
     </BrowserRouter>
   </Provider>
 );
-
 
 ReactDOM.render(
   <App />,

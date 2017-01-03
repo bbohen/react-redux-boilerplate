@@ -2,8 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
-import Card from '../components/Card';
-import Heading from '../components/Heading';
+import { Card, Heading } from '../components';
 import { load as loadCats, trigger } from '../redux/modules/cats';
 
 class Cats extends Component {

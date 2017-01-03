@@ -4,8 +4,6 @@
     * optimize / code-split
     * webpack production config with opts
 * redux-dev-tools
-* redux-pack
-    * move fetch to its own file
 * redux-form 6
 * jest
 * separate file for routes?
