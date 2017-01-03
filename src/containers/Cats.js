@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 import Card from '../components/Card';
+import Heading from '../components/Heading';
 import { load as loadCats, trigger } from '../redux/modules/cats';
 
 class Cats extends Component {
@@ -32,7 +33,7 @@ class Cats extends Component {
             <img role="presentation" src={cat.data.thumbnail} />
           </Card>
         )) :
-        <h1>Loading you some cats</h1>}
+        <Heading>Loading you some cats</Heading>}
       </CatsWrapper>
     );
   }

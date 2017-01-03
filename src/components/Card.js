@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 const Card = (props) => {
@@ -11,6 +11,10 @@ const Card = (props) => {
       {props.children}
     </CardWrapper>
   );
+};
+
+Card.propTypes = {
+  children: PropTypes.shape,
 };
 
 export default Card;

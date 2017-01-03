@@ -6,9 +6,7 @@ const intialState = {
   error: null,
   isLoaded: false,
   isLoading: false,
-  list: [
-
-  ],
+  list: [],
   triggered: false,
 };
 

@@ -6,8 +6,9 @@
   "author": "Brad Bohen <bbohen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config webpack.config.js",
-    "dev": "webpack-dev-server --open --history-api-fallback"
+    "dev": "webpack-dev-server --open --history-api-fallback",
+    "lint": "eslint src --ext .js --fix",
+    "start": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "normalize.css": "^5.0.0",
