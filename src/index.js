@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Match, Miss } from 'react-router';
 
-import 'normalize.css';
+import './setup.css';
 
 import Cats from './containers/Cats';
 import Home from './containers/Home';
