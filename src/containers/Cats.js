@@ -1,29 +1,40 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 
-import { load, trigger } from '../redux/modules/cats';
+import Card from '../components/Card';
+import Heading from '../components/Heading';
+import { load as loadCats, trigger } from '../redux/modules/cats';
 
 class Cats extends Component {
   static propTypes = {
     cats: PropTypes.shape.isRequired,
-    load: PropTypes.func.isRequired,
+    loadCats: PropTypes.func.isRequired,
   }
 
   componentWillMount() {
-    this.props.load();
+    const { cats } = this.props;
+
+    if (!cats.isLoaded) {
+      this.props.loadCats();
+    }
   }
 
   render() {
     const { cats } = this.props;
+    const CatsWrapper = styled.div`
+      display: flex;
+      flex-wrap: wrap;
+    `;
     return (
-      <div>
-        Cats loaded: {String(this.props.cats.length)}
-        {cats.map(cat => (
-          <div>
+      <CatsWrapper>
+        {cats.length ? cats.map(cat => (
+          <Card>
             <img role="presentation" src={cat.data.thumbnail} />
-          </div>
-        ))}
-      </div>
+          </Card>
+        )) :
+        <Heading>Loading you some cats</Heading>}
+      </CatsWrapper>
     );
   }
 }
@@ -34,4 +45,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, { load, trigger })(Cats);
+export default connect(mapStateToProps, { loadCats, trigger })(Cats);

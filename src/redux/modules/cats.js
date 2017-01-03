@@ -6,9 +6,7 @@ const intialState = {
   error: null,
   isLoaded: false,
   isLoading: false,
-  list: [
-
-  ],
+  list: [],
   triggered: false,
 };
 
@@ -20,7 +18,7 @@ export default function reducer(state = intialState, action = {}) {
         start: s => ({ ...s, isLoading: true, error: null }),
         finish: s => ({ ...s, isLoading: false }),
         failure: s => ({ ...s, error: payload }),
-        success: s => ({ ...s, list: payload.data.children }),
+        success: s => ({ ...s, isLoaded: true, list: payload.data.children }),
       });
     default:
       return state;
@@ -30,8 +28,6 @@ export default function reducer(state = intialState, action = {}) {
 export function load() {
   return {
     type: LOAD_CATS,
-    promise: fetch('https://www.reddit.com/r/cats/top/.json').then(
-      response => response.text().then(text => JSON.parse(text)),
-    ),
+    promise: fetch('https://www.reddit.com/r/cats/top/.json').then(response => response.json()),
   };
 }
