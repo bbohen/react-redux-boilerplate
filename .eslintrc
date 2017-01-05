@@ -11,12 +11,17 @@
     }
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "mocha": true,
   },
   "plugins": [
     "react"
   ],
   "rules": {
     "react/jsx-filename-extension": 0
+  },
+  "globals": {
+    "expect": true,
+    "jest": true
   }
 }

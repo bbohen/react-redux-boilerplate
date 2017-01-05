@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "webpack-dev-server --open --history-api-fallback",
     "lint": "eslint src --ext .js --fix",
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.config.js",
+    "test": "jest"
   },
   "dependencies": {
     "normalize.css": "^5.0.0",
@@ -24,20 +25,31 @@
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.9",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.26.1",
+    "enzyme": "^2.7.0",
     "eslint": "^3.12.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "html-webpack-plugin": "^2.24.1",
+    "jest": "^18.1.0",
+    "react-test-renderer": "^15.4.1",
     "style-loader": "^0.13.1",
     "webpack": "2.1.0-beta.28",
     "webpack-dev-server": "2.1.0-beta.12"
+  },
+  "jest": {
+    "testRegex": "/__tests__/.*\\.test\\.js$",
+    "verbose": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
   }
 }

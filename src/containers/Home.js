@@ -4,8 +4,8 @@ import { Heading } from '../components';
 
 const Home = () => (
   <div>
-    <Heading>Home</Heading>
-    <p>The home page that will be just awesome once something is actually in it.</p>
+    <Heading>Hello</Heading>
+    <p>This is a &quot;boilerplate&quot; for react/redux apps.</p>
   </div>
 );
 

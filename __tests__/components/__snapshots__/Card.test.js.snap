@@ -1,0 +1,8 @@
+exports[`<Card /> renders a card 1`] = `
+<div
+  className="ckkQvH">
+  <p>
+    Test
+  </p>
+</div>
+`;
