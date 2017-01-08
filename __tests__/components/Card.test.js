@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import { Card } from '../../src/components';
 
 describe('<Card />', () => {
-  it('renders a card', () => {
+  it('renders a card component', () => {
     const component = renderer.create(
       <Card>
         <p>Test</p>

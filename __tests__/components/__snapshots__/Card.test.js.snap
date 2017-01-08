@@ -1,4 +1,4 @@
-exports[`<Card /> renders a card 1`] = `
+exports[`<Card /> renders a card component 1`] = `
 <div
   className="ckkQvH">
   <p>
