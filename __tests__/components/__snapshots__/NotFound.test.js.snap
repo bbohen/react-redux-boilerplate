@@ -1,0 +1,6 @@
+exports[`<NotFound /> renders the not found component 1`] = `
+<h1
+  className="fktauX">
+  Not Found!
+</h1>
+`;
