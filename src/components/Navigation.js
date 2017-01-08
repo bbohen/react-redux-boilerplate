@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import styled from 'styled-components';
 
@@ -46,7 +46,7 @@ const Navigation = () => {
       <Heading>
         <NavigationHeaderLink
           activeStyle={{ color: 'LightSalmon' }}
-          isActive={location => location.pathname === '/'}
+          isActive={location => location && location.pathname === '/'}
           to="/"
         >
           React Redux Boilerplate
@@ -56,7 +56,7 @@ const Navigation = () => {
         <NavigationItem>
           <NavigationLink
             activeStyle={activeStyle}
-            isActive={location => location.pathname === '/cats'}
+            isActive={location => location && location.pathname === '/cats'}
             to="/cats"
           >
             Cats
@@ -72,5 +72,11 @@ const Navigation = () => {
     </Wrapper>
   );
 };
+
+const contextTypes = {
+  router: PropTypes.object,
+};
+
+Navigation.contextTypes = contextTypes;
 
 export default Navigation;
