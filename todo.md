@@ -1,10 +1,11 @@
 ### Todo
 
+* note/raise test coverage
 * redux-form 6
-* raise test coverage
 * content
     * home - basic info and stuff (parse readme? display readme?)
     * more cats (infinite cats?)
+    * react news?
     * forms
     * other stuff?
 * webpack 2
@@ -16,3 +17,4 @@
 * aliasing
 * latest React HMR (Webpack dev server --hot not enough?)
 * fill out readme with all the stuffs
+* responsive
