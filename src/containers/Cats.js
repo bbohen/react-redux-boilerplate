@@ -25,6 +25,7 @@ class Cats extends Component {
       display: flex;
       flex-wrap: wrap;
     `;
+
     return (
       <CatsWrapper>
         {cats.length ? cats.map(cat => (

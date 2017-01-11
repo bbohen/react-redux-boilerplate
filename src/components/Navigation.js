@@ -63,7 +63,7 @@ const Navigation = () => {
           </NavigationLink>
         </NavigationItem>
         <NavigationItem>
-          <NavigationLink to="/forms">Forms</NavigationLink>
+          <NavigationLink to="/formWithCats">Form with cats</NavigationLink>
         </NavigationItem>
         <NavigationItem>
           <NavigationLink to="/about">About</NavigationLink>
