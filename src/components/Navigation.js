@@ -6,32 +6,38 @@ import Heading from './Heading';
 
 const Navigation = () => {
   const Wrapper = styled.div`
-    width: 20%;
-    padding: 1em 0 1em 1em;
+    // padding: 1em;
+    background: Ivory;
+    border-bottom: 1px solid teal;
+    display: flex;
+    justify-content: center;
+  `;
+
+  const NavigationContent = styled.div`
+    padding: 1em;
+    min-width: 1000px;
   `;
 
   const NavigationItem = styled.li`
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    margin-left: 1em;
   `;
 
   const NavigationList = styled.ul`
+    align-items: center;
     list-style: none;
     padding: 0;
+    display: flex;
   `;
 
   const NavigationHeaderLink = styled(Link)`
     color: teal;
     text-decoration: none;
-    font-weight: 300;
   `;
 
   const NavigationLink = styled(Link)`
     border-bottom: 1px solid ivory;
     color: teal;
     display: block;
-    font-weight: 300;
-    letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
   `;
@@ -43,32 +49,37 @@ const Navigation = () => {
 
   return (
     <Wrapper>
-      <Heading>
-        <NavigationHeaderLink
-          activeStyle={{ color: 'LightSalmon' }}
-          isActive={location => location && location.pathname === '/'}
-          to="/"
-        >
-          React Redux Boilerplate
-        </NavigationHeaderLink>
-      </Heading>
-      <NavigationList>
-        <NavigationItem>
-          <NavigationLink
-            activeStyle={activeStyle}
-            isActive={location => location && location.pathname === '/cats'}
-            to="/cats"
-          >
-            Cats
-          </NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink to="/formWithCats">Form with cats</NavigationLink>
-        </NavigationItem>
-        <NavigationItem>
-          <NavigationLink to="/about">About</NavigationLink>
-        </NavigationItem>
-      </NavigationList>
+      <NavigationContent>
+        <NavigationList>
+          <Heading>
+            <NavigationHeaderLink
+              activeStyle={{ color: 'LightSalmon' }}
+              isActive={({ pathname }) => pathname === '/'}
+              to="/"
+            >
+              React Redux Boilerplate
+            </NavigationHeaderLink>
+          </Heading>
+          <NavigationItem>
+            <NavigationLink
+              activeStyle={activeStyle}
+              isActive={({ pathname }) => pathname === '/cats'}
+              to="/cats"
+            >
+              Cats
+            </NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink
+              activeStyle={activeStyle}
+              isActive={({ pathname }) => pathname === '/formWithCats'}
+              to="/formWithCats"
+            >
+              Form with cats
+            </NavigationLink>
+          </NavigationItem>
+        </NavigationList>
+      </NavigationContent>
     </Wrapper>
   );
 };

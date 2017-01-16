@@ -22,6 +22,7 @@
     "redux-form": "^6.4.3",
     "redux-logger": "^2.7.4",
     "redux-pack": "^0.1.4",
+    "redux-thunk": "^2.1.0",
     "styled-components": "^1.2.1"
   },
   "devDependencies": {

@@ -1,48 +1,54 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import styled from 'styled-components';
 
-class FormWithCats extends Component {
-  render() {
-    const { handleSubmit } = this.props;
-    const FormWrapper = styled.div`
-      display: flex;
-      justify-content: center;
-    `;
-    const InputWrapper = styled.div`
-      margin-bottom: 1em;
-    `;
-    const StyledInput = styled(Field)`
-      background-color: teal;
-      color: ivory;
-      border: none;
-      font-size: 2em;
-      width: 100%;
-      padding: 1em;
-    `;
+import Button from '../components/Button';
+import Heading from '../components/Heading';
+import InputField from '../components/InputField';
+import { giveRandomCat } from '../redux/modules/cats';
 
-    // TODO: Query reddit API with the results from this cat-form?
-    // Change colors or something while typing?
+const FormWithCats = (props) => {
+  const email = value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Invalid email address' : undefined);
+  const required = value => (value ? undefined : 'Required');
 
-    return (
-      <FormWrapper>
-        <form onSubmit={handleSubmit}>
-          <InputWrapper>
-            <StyledInput name="firstName" component="input" type="text" placeholder="Breed" />
-          </InputWrapper>
-          <InputWrapper>
-            <StyledInput name="lastName" component="input" type="text" placeholder="Breed" />
-          </InputWrapper>
-          <InputWrapper>
-            <StyledInput name="email" component="input" type="email" placeholder="Breed" />
-          </InputWrapper>
-          <button type="submit">Submit</button>
-        </form>
-      </FormWrapper>
-    );
-  }
-}
+  return (
+    <form onSubmit={props.handleSubmit(props.giveRandomCat)}>
+      <Heading>Fill out cat form, receive cat.</Heading>
+      <Field
+        label="Cat Name:"
+        name="catName"
+        component={InputField}
+        type="text"
+        validate={required}
+      />
+      <Field
+        label="Cat Email:"
+        name="catEmail"
+        component={InputField}
+        type="text"
+        validate={[email, required]}
+      />
+      <Button type="submit">
+          Give me cat.
+      </Button>
+    </form>
+  );
+};
 
-export default reduxForm({
-  form: 'contact',
-})(FormWithCats);
+FormWithCats.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+  giveRandomCat: PropTypes.func.isRequired,
+};
+
+export default connect(
+  state => ({
+    cats: state.cats,
+  }),
+  {
+    giveRandomCat,
+  },
+)(reduxForm(
+  {
+    form: 'cats',
+  })(FormWithCats),
+);

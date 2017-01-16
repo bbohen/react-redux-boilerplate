@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const AppWrapper = styled.div`
   display: flex;
-  background: Ivory;
+  flex-direction: column;
   color: DarkSlateGray;
   min-height: 100vh;
 `;

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const Heading = styled.h1`
+const Heading = styled.h2`
   color: teal;
-  margin-top: 0;
+  margin: 0;
 `;
 
 export default Heading;

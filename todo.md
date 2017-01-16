@@ -6,7 +6,8 @@
     * more cats (infinite cats?)
     * react news?
     * forms
-    * cats with hats?
+    * something cool and equally useless using as-you-type functionality
+    * cats post detail page
     * other stuff?
 * webpack 2
     * optimize / code-split

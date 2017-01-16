@@ -28,9 +28,12 @@ class Cats extends Component {
 
     return (
       <CatsWrapper>
-        {cats.length ? cats.map(cat => (
-          <Card>
-            <img role="presentation" src={cat.data.thumbnail} />
+        {cats.length ? cats.map(({ data }) => (
+          <Card key={data.id}>
+            <img
+              role="presentation"
+              src={data.thumbnail}
+            />
           </Card>
         )) :
         <Heading>Loading you some cats</Heading>}
