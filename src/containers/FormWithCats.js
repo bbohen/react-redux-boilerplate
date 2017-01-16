@@ -10,6 +10,14 @@ import { giveRandomCat } from '../redux/modules/cats';
 const FormWithCats = (props) => {
   const email = value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Invalid email address' : undefined);
   const required = value => (value ? undefined : 'Required');
+  let result;
+
+  if (props.randomCat.data) {
+    result = (<img
+      role="presentation"
+      src={props.randomCat.data.thumbnail}
+    />);
+  }
 
   return (
     <form onSubmit={props.handleSubmit(props.giveRandomCat)}>
@@ -31,6 +39,7 @@ const FormWithCats = (props) => {
       <Button type="submit">
           Give me cat.
       </Button>
+      {result}
     </form>
   );
 };
@@ -42,7 +51,7 @@ FormWithCats.propTypes = {
 
 export default connect(
   state => ({
-    cats: state.cats,
+    randomCat: state.cats.randomCat,
   }),
   {
     giveRandomCat,

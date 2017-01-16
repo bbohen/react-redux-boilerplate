@@ -8,6 +8,7 @@ const intialState = {
   isLoaded: false,
   isLoading: false,
   list: [],
+  randomCat: {},
   triggered: false,
 };
 
@@ -24,7 +25,7 @@ export default function reducer(state = intialState, action = {}) {
     case LOAD_RANDOM_CAT:
       return {
         ...state,
-        randomCat: true,
+        randomCat: state.list[Math.floor(Math.random() * state.list.length)],
       };
     default:
       return state;
