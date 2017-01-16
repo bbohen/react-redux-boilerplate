@@ -5,6 +5,11 @@ import styled from 'styled-components';
 import { Card, Heading } from '../components';
 import { load as loadCats, trigger } from '../redux/modules/cats';
 
+const CatsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 class Cats extends Component {
   static propTypes = {
     cats: PropTypes.shape.isRequired,
@@ -21,10 +26,6 @@ class Cats extends Component {
 
   render() {
     const { cats } = this.props;
-    const CatsWrapper = styled.div`
-      display: flex;
-      flex-wrap: wrap;
-    `;
 
     return (
       <CatsWrapper>
