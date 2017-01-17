@@ -8,7 +8,7 @@ const intialState = {
   isLoaded: false,
   isLoading: false,
   list: [],
-  randomCat: {},
+  randomCat: '',
   triggered: false,
 };
 
@@ -23,10 +23,17 @@ export default function reducer(state = intialState, action = {}) {
         success: s => ({ ...s, isLoaded: true, list: payload.data.children }),
       });
     case LOAD_RANDOM_CAT:
-      return {
-        ...state,
-        randomCat: state.list[Math.floor(Math.random() * state.list.length)],
-      };
+      return handle(state, action, {
+        failure: s => ({ ...s, error: payload }),
+        success: (s) => {
+          const randomCatData = payload.data[Math.floor(Math.random() * payload.data.length)];
+          return {
+            ...s,
+            isLoaded: true,
+            randomCat: randomCatData.images.original.url,
+          };
+        },
+      });
     default:
       return state;
   }
@@ -35,24 +42,15 @@ export default function reducer(state = intialState, action = {}) {
 export function load() {
   return {
     type: LOAD_CATS,
-    promise: fetch('https://www.reddit.com/r/cats/top/.json').then(response => response.json()),
+    promise: fetch('https://www.reddit.com/r/cats/top/.json')
+      .then(response => response.json()),
   };
 }
 
-export function giveRandomCat({ catName }) {
-  return (dispatch, getState) => {
-    const { cats } = { ...getState() };
-    const action = {
-      name: catName,
-      type: LOAD_RANDOM_CAT,
-    };
-
-    if (!cats.isLoaded) {
-      return dispatch(load()).then(() => {
-        dispatch(action);
-      });
-    }
-
-    return dispatch(action);
+export function giveRandomCat() {
+  return {
+    type: LOAD_RANDOM_CAT,
+    promise: fetch('http://api.giphy.com/v1/gifs/search?q=$cat&api_key=dc6zaTOxFJmzC&limit=10&offset=0')
+      .then(response => response.json()),
   };
 }

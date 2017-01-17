@@ -6,7 +6,7 @@ import Heading from './Heading';
 
 const Navigation = () => {
   const Wrapper = styled.div`
-    // padding: 1em;
+    padding: 0 1em;
     background: Ivory;
     border-bottom: 1px solid teal;
     display: flex;
@@ -15,7 +15,7 @@ const Navigation = () => {
 
   const NavigationContent = styled.div`
     padding: 1em;
-    min-width: 1000px;
+    width: 1000px;
   `;
 
   const NavigationItem = styled.li`
