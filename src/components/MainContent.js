@@ -22,7 +22,7 @@ const MainContent = ({ children }) => (
 );
 
 MainContent.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.element.isRequired,
 };
 
 export default MainContent;

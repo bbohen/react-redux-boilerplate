@@ -12,7 +12,7 @@ const CatsWrapper = styled.div`
 
 class Cats extends Component {
   static propTypes = {
-    cats: PropTypes.array.isRequired,
+    cats: PropTypes.arrayOf(PropTypes.shape),
     loadCats: PropTypes.func.isRequired,
   }
 

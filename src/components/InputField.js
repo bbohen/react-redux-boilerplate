@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
 const InputWrapper = styled.div`
@@ -97,6 +97,18 @@ const InputField = ({
         </FormFeedback>))}
     </InputWrapper>
   );
+};
+
+InputField.propTypes = {
+  input: PropTypes.shape.isRequired,
+  label: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  type: PropTypes.string,
+  meta: PropTypes.shape({
+    touched: PropTypes.boolean,
+    error: PropTypes.string,
+    warning: PropTypes.string,
+  }),
 };
 
 export default InputField;

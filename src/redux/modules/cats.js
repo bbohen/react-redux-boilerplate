@@ -19,8 +19,8 @@ export default function reducer(state = intialState, action = {}) {
     case CLEAR_RANDOM_CAT:
       return {
         ...state,
-        randomCat: ''
-      }
+        randomCat: '',
+      };
     case LOAD_CATS:
       return handle(state, action, {
         start: s => ({ ...s, isLoading: true, error: null }),

@@ -1,52 +1,41 @@
 exports[`<Navigation /> renders the navigation component 1`] = `
 <div
-  className="doUeJG">
-  <h1
-    className="fktauX">
-    <a
-      className="jzyuq"
-      href="/"
-      onClick={[Function]}
-      style={
-        Object {
-          "color": "LightSalmon",
-        }
-      }>
-      React Redux Boilerplate
-    </a>
-  </h1>
-  <ul
-    className="mJDEk">
-    <li
-      className="eJOulI">
-      <a
-        className="csWFSb"
-        href="/cats"
-        onClick={[Function]}
-        style={Object {}}>
-        Cats
-      </a>
-    </li>
-    <li
-      className="eJOulI">
-      <a
-        className="csWFSb"
-        href="/forms"
-        onClick={[Function]}
-        style={Object {}}>
-        Forms
-      </a>
-    </li>
-    <li
-      className="eJOulI">
-      <a
-        className="csWFSb"
-        href="/about"
-        onClick={[Function]}
-        style={Object {}}>
-        About
-      </a>
-    </li>
-  </ul>
+  className="gDXCfh">
+  <div
+    className="ggHEkD">
+    <ul
+      className="ewkDTR">
+      <h2
+        className="iHvTYn">
+        <a
+          className="lkbuMz"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}>
+          React Redux Boilerplate
+        </a>
+      </h2>
+      <li
+        className="cGPnAT">
+        <a
+          className="kWmceO"
+          href="/cats"
+          onClick={[Function]}
+          style={Object {}}>
+          Cats
+        </a>
+      </li>
+      <li
+        className="cGPnAT">
+        <a
+          className="kWmceO"
+          href="/formWithCats"
+          onClick={[Function]}
+          style={Object {}}>
+          Form with cats
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
