@@ -45,7 +45,7 @@
     "jest": "^18.1.0",
     "react-test-renderer": "^15.4.1",
     "style-loader": "^0.13.1",
-    "webpack": "2.1.0-beta.28",
+    "webpack": "beta",
     "webpack-dev-server": "2.1.0-beta.12"
   },
   "jest": {

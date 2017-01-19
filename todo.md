@@ -13,6 +13,7 @@
     * optimize / code-split
     * webpack production config with opts
 * fill out readme with all the stuffs
+* GH link in the header
 * redux-dev-tools
 * selectors of cats
 * separate file for routes?

@@ -1,5 +1,6 @@
 import { handle } from 'redux-pack';
 
+const CLEAR_RANDOM_CAT = 'boilerplate/cats/CLEAR_RANDOM_CAT';
 const LOAD_CATS = 'boilerplate/cats/LOAD_CATS';
 const LOAD_RANDOM_CAT = 'boilerplate/cats/LOAD_RANDOM_CAT';
 
@@ -15,6 +16,11 @@ const intialState = {
 export default function reducer(state = intialState, action = {}) {
   const { payload, type } = action;
   switch (type) {
+    case CLEAR_RANDOM_CAT:
+      return {
+        ...state,
+        randomCat: ''
+      }
     case LOAD_CATS:
       return handle(state, action, {
         start: s => ({ ...s, isLoading: true, error: null }),
@@ -37,6 +43,12 @@ export default function reducer(state = intialState, action = {}) {
     default:
       return state;
   }
+}
+
+export function clearRandomCat() {
+  return {
+    type: CLEAR_RANDOM_CAT,
+  };
 }
 
 export function load() {

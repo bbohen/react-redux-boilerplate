@@ -44,7 +44,6 @@ const Navigation = () => {
 
   const activeStyle = {
     borderBottom: '1px solid LightSalmon',
-    color: 'LightSalmon',
   };
 
   return (
@@ -53,7 +52,6 @@ const Navigation = () => {
         <NavigationList>
           <Heading>
             <NavigationHeaderLink
-              activeStyle={{ color: 'LightSalmon' }}
               isActive={({ pathname }) => pathname === '/'}
               to="/"
             >

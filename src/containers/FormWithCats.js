@@ -6,14 +6,28 @@ import styled from 'styled-components';
 import Button from '../components/Button';
 import Heading from '../components/Heading';
 import InputField from '../components/InputField';
-import { giveRandomCat } from '../redux/modules/cats';
+import { clearRandomCat, giveRandomCat } from '../redux/modules/cats';
 
 const FormWrapper = styled.div`
-  display: flex
+  display: flex;
+`;
+
+const CatForm = styled.form`
+  width: 50%;
 `;
 
 const CatFormHeading = styled(Heading)`
   margin-bottom: 1em;
+`;
+
+const CatFormButton = styled(Button)`
+  width: 60%;
+  margin: 2em 20% 0;
+`;
+
+const SalmonText = styled.div`
+  color: LightSalmon;
+  cursor: pointer;
 `;
 
 const FormWithCats = (props) => {
@@ -24,7 +38,12 @@ const FormWithCats = (props) => {
   if (props.randomCat) {
     result = (
       <div>
-        <CatFormHeading>Here is your cat.</CatFormHeading>
+        <CatFormHeading>
+          Here is your cat.
+          <SalmonText onClick={props.clearRandomCat}>
+            Try again?
+          </SalmonText>
+        </CatFormHeading>
         <img
           role="presentation"
           src={props.randomCat}
@@ -35,10 +54,11 @@ const FormWithCats = (props) => {
   return (
     <FormWrapper>
       {!result &&
-      <form onSubmit={props.handleSubmit(props.giveRandomCat)}>
+      <CatForm onSubmit={props.handleSubmit(props.giveRandomCat)}>
         <CatFormHeading>Fill out cat form, receive cat.</CatFormHeading>
         <Field
           label="Cat Name:"
+          name="catName"
           component={InputField}
           type="text"
           validate={required}
@@ -50,10 +70,10 @@ const FormWithCats = (props) => {
           type="text"
           validate={[email, required]}
         />
-        <Button type="submit">
+        <CatFormButton type="submit">
             Give me cat.
-        </Button>
-      </form> }
+        </CatFormButton>
+      </CatForm> }
       {result}
     </FormWrapper>
   );
@@ -70,6 +90,7 @@ export default connect(
     randomCat: state.cats.randomCat,
   }),
   {
+    clearRandomCat,
     giveRandomCat,
   },
 )(reduxForm(

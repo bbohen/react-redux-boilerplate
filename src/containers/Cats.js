@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import styled from 'styled-components';
 
 import { Card, Heading } from '../components';
-import { load as loadCats, trigger } from '../redux/modules/cats';
+import { load as loadCats } from '../redux/modules/cats';
 
 const CatsWrapper = styled.div`
   display: flex;
@@ -49,4 +49,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, { loadCats, trigger })(Cats);
+export default connect(mapStateToProps, { loadCats })(Cats);
