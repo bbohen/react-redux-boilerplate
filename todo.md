@@ -1,11 +1,10 @@
 ### Todo
 
-* redux-form 6 with cats
 * content
     * home - basic info and stuff
     * more cats (infinite cats?)
     * react news?
-    * forms
+    * more form input/validation
     * something cool and equally useless using as-you-type functionality
     * cats post detail page
     * other stuff?
@@ -15,8 +14,6 @@
 * fill out readme with all the stuffs
 * GH link in the header
 * redux-dev-tools
-* selectors of cats
-* separate file for routes?
 * aliasing
 * spinners
 * latest React HMR (Webpack dev server --hot not enough?)
