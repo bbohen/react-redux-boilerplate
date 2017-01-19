@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Card, Heading } from '../components';
 import { load as loadHumans } from '../redux/modules/humans';
 
-const CatsWrapper = styled.div`
+const HumansWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
@@ -29,7 +29,7 @@ class Humans extends Component {
     const { humans } = this.props;
 
     return (
-      <CatsWrapper>
+      <HumansWrapper>
         {humans.length ? humans.map(({ email, photo }) => (
           <Card key={email}>
             <img
@@ -39,7 +39,7 @@ class Humans extends Component {
           </Card>
         )) :
         <Heading>Loading you some humans</Heading>}
-      </CatsWrapper>
+      </HumansWrapper>
     );
   }
 }
