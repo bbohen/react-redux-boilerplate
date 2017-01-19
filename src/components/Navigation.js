@@ -70,10 +70,19 @@ const Navigation = () => {
           <NavigationItem>
             <NavigationLink
               activeStyle={activeStyle}
-              isActive={({ pathname }) => pathname === '/formWithCats'}
-              to="/formWithCats"
+              isActive={({ pathname }) => pathname === '/humans'}
+              to="/humans"
             >
-              Form with cats
+              Humans
+            </NavigationLink>
+          </NavigationItem>
+          <NavigationItem>
+            <NavigationLink
+              activeStyle={activeStyle}
+              isActive={({ pathname }) => pathname === '/form'}
+              to="/form"
+            >
+              Form
             </NavigationLink>
           </NavigationItem>
         </NavigationList>

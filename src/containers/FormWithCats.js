@@ -55,7 +55,7 @@ const FormWithCats = (props) => {
     <FormWrapper>
       {!result &&
       <CatForm onSubmit={props.handleSubmit(props.giveRandomCat)}>
-        <CatFormHeading>Fill out cat form, receive cat.</CatFormHeading>
+        <CatFormHeading>Form.</CatFormHeading>
         <Field
           label="Cat Name:"
           name="catName"
@@ -71,7 +71,7 @@ const FormWithCats = (props) => {
           validate={[email, required]}
         />
         <CatFormButton type="submit">
-            Give me cat.
+            Submit the form.
         </CatFormButton>
       </CatForm> }
       {result}

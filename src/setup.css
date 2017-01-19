@@ -1,3 +1,7 @@
+/*
+  Base CSS file, styling of components is handled via styled-components
+ */
+
 @import "~normalize.css/normalize.css";
 
 html,

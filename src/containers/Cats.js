@@ -13,13 +13,14 @@ const CatsWrapper = styled.div`
 class Cats extends Component {
   static propTypes = {
     cats: PropTypes.arrayOf(PropTypes.shape),
+    catsAreLoaded: PropTypes.bool.isRequired,
     loadCats: PropTypes.func.isRequired,
   }
 
   componentWillMount() {
-    const { cats } = this.props;
+    const { catsAreLoaded } = this.props;
 
-    if (!cats.isLoaded) {
+    if (!catsAreLoaded) {
       this.props.loadCats();
     }
   }
@@ -46,6 +47,7 @@ class Cats extends Component {
 function mapStateToProps(state) {
   return {
     cats: state.cats.list,
+    catsAreLoaded: state.cats.isLoaded,
   };
 }
 

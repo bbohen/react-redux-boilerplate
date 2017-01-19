@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Match, Miss } from 'react-router';
 
 import { AppWrapper, MainContent, Navigation, NotFound } from './components';
-import { Cats, FormWithCats, Home } from './containers';
+import { Cats, Humans, FormWithCats, Home } from './containers';
 import initializeStore from './redux/init';
 
 import './setup.css';
@@ -19,7 +19,8 @@ const App = () => (
         <MainContent>
           <Match exactly pattern="/" component={Home} />
           <Match exactly pattern="/cats" component={Cats} />
-          <Match exactly pattern="/formWithCats" component={FormWithCats} />
+          <Match exactly pattern="/form" component={FormWithCats} />
+          <Match exactly pattern="/humans" component={Humans} />
           <Miss component={NotFound} />
         </MainContent>
       </AppWrapper>
