@@ -1,13 +1,17 @@
-import { createStore, applyMiddleware } from 'redux';
+import { compose, createStore, applyMiddleware } from 'redux';
 import { middleware as reduxPackMiddleware } from 'redux-pack';
-import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import rootReducer from './reducer';
 
-const logger = createLogger();
+/* eslint-disable no-underscore-dangle  */
+const composeEnhancers = process.env.NODE_ENV !== 'production' &&
+(window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose);
+/* eslint-enable */
 
 export default () => createStore(
   rootReducer,
-  applyMiddleware(thunk, reduxPackMiddleware, logger),
+  composeEnhancers(
+    applyMiddleware(thunk, reduxPackMiddleware),
+  ),
 );

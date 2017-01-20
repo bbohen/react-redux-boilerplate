@@ -56,6 +56,7 @@ if (isProd) {
   );
 } else {
   plugins.push(
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin()
   );
 }
@@ -68,6 +69,7 @@ module.exports = {
       'react-redux',
       'react-router',
       'redux',
+      'redux-form',
       'redux-thunk',
       'redux-pack',
       'styled-components',

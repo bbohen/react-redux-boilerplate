@@ -6,9 +6,9 @@
   "author": "Brad Bohen <bbohen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --open --history-api-fallback",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --open --history-api-fallback",
     "lint": "eslint src --ext .js --fix",
-    "start": "webpack --config webpack.config.js",
     "test": "jest",
     "test:coverage": "jest --coverage && open coverage/lcov-report/index.html"
   },
@@ -20,7 +20,6 @@
     "react-router": "4.0.0-alpha.6",
     "redux": "^3.6.0",
     "redux-form": "^6.4.3",
-    "redux-logger": "^2.7.4",
     "redux-pack": "^0.1.4",
     "redux-thunk": "^2.2.0",
     "styled-components": "^1.3.1"
