@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import Button from '../components/Button';
 import Heading from '../components/Heading';
-import InputField from '../components/InputField';
+import FormField from '../components/FormField';
 import { clearRandomCat, giveRandomCat } from '../redux/modules/cats';
 
 const FormWrapper = styled.div`
@@ -59,14 +59,14 @@ const FormWithCats = (props) => {
         <Field
           label="Cat Name:"
           name="catName"
-          component={InputField}
+          component={FormField}
           type="text"
           validate={required}
         />
         <Field
           label="Cat Email:"
           name="catEmail"
-          component={InputField}
+          component={FormField}
           type="text"
           validate={[email, required]}
         />
