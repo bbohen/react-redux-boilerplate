@@ -2,6 +2,7 @@
 
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProd = nodeEnv === 'production';
@@ -77,6 +78,7 @@ module.exports = {
   },
   output: {
     filename: 'index.[hash].js',
+    path: path.resolve(__dirname, 'dist/assets'),
   },
   devtool: 'source-map',
   module: {
