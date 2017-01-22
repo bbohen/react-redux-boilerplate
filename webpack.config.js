@@ -67,6 +67,7 @@ module.exports = {
     js: './src/index.js',
     vendor: [
       'react',
+      'react-dom',
       'react-redux',
       'react-router',
       'redux',
