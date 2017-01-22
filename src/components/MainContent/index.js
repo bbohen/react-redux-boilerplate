@@ -15,4 +15,8 @@ MainContent.propTypes = {
   children: PropTypes.arrayOf(PropTypes.element),
 };
 
+MainContent.defaultProps = {
+  children: [],
+};
+
 export default MainContent;

@@ -12,6 +12,10 @@ class Cats extends Component {
     loadCats: PropTypes.func.isRequired,
   }
 
+  static defaultProps = {
+    cats: [{}],
+  }
+
   componentWillMount() {
     const { catsAreLoaded } = this.props;
 
@@ -28,7 +32,7 @@ class Cats extends Component {
         {cats.length ? cats.map(({ data }) => (
           <Card key={data.id}>
             <img
-              role="presentation"
+              alt=""
               src={data.thumbnail}
             />
           </Card>

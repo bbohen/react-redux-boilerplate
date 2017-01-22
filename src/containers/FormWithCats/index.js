@@ -25,7 +25,7 @@ const FormWithCats = (props) => {
           </ActionText>
         </CatFormHeading>
         <img
-          role="presentation"
+          alt=""
           src={props.randomCat}
         />
       </div>);
@@ -64,6 +64,10 @@ FormWithCats.propTypes = {
   clearRandomCat: PropTypes.func.isRequired,
   giveRandomCat: PropTypes.func.isRequired,
   randomCat: PropTypes.string,
+};
+
+FormWithCats.defaultProps = {
+  randomCat: '',
 };
 
 export default connect(

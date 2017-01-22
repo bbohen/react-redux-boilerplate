@@ -58,4 +58,12 @@ InputField.propTypes = {
   }),
 };
 
+InputField.defaultProps = {
+  placeholder: '',
+  type: 'text',
+  meta: {
+    touched: false,
+  },
+};
+
 export default InputField;

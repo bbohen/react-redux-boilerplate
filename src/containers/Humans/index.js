@@ -12,6 +12,10 @@ class Humans extends Component {
     loadHumans: PropTypes.func.isRequired,
   }
 
+  static defaultProps = {
+    humans: [{}],
+  }
+
   componentWillMount() {
     const { humansAreLoaded } = this.props;
 
@@ -28,7 +32,7 @@ class Humans extends Component {
         {humans.length ? humans.map(({ email, photo }) => (
           <Card key={email}>
             <img
-              role="presentation"
+              alt=""
               src={photo}
             />
           </Card>

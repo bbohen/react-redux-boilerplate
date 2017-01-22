@@ -11,4 +11,8 @@ Card.propTypes = {
   children: PropTypes.element,
 };
 
+Card.defaultProps = {
+  children: {},
+};
+
 export default Card;
