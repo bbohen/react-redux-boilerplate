@@ -1,6 +1,5 @@
 ### Todo
 
-* improve structure with styled-components (index files as components)
 * content
     * home - basic info and stuff
     * more form input/validation
@@ -9,6 +8,7 @@
 * aliasing
 * style constants
 * fill out readme with all the stuffs
+* comments
 * offline support
 * transitions (color at first?)
 * spinners
