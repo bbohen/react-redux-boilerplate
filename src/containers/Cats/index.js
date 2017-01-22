@@ -1,14 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
 
-import { Card, Heading } from '../components';
-import { load as loadCats } from '../redux/modules/cats';
-
-const CatsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
+import { Card, Heading } from '../../components';
+import Wrapper from './Wrapper';
+import { load as loadCats } from '../../redux/modules/cats';
 
 class Cats extends Component {
   static propTypes = {
@@ -29,7 +24,7 @@ class Cats extends Component {
     const { cats } = this.props;
 
     return (
-      <CatsWrapper>
+      <Wrapper>
         {cats.length ? cats.map(({ data }) => (
           <Card key={data.id}>
             <img
@@ -39,7 +34,7 @@ class Cats extends Component {
           </Card>
         )) :
         <Heading>Loading you some cats</Heading>}
-      </CatsWrapper>
+      </Wrapper>
     );
   }
 }

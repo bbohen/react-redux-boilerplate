@@ -1,34 +1,14 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
-import styled from 'styled-components';
 
-import Button from '../components/Button';
-import Heading from '../components/Heading';
-import FormField from '../components/FormField';
-import { clearRandomCat, giveRandomCat } from '../redux/modules/cats';
-
-const FormWrapper = styled.div`
-  display: flex;
-`;
-
-const CatForm = styled.form`
-  width: 50%;
-`;
-
-const CatFormHeading = styled(Heading)`
-  margin-bottom: 1em;
-`;
-
-const CatFormButton = styled(Button)`
-  width: 60%;
-  margin: 2em 20% 0;
-`;
-
-const SalmonText = styled.div`
-  color: LightSalmon;
-  cursor: pointer;
-`;
+import FormField from '../../components/FormField';
+import { clearRandomCat, giveRandomCat } from '../../redux/modules/cats';
+import ActionText from './ActionText';
+import CatFormHeading from './Heading';
+import CatFormButton from './Button';
+import Form from './Form';
+import Wrapper from './Wrapper';
 
 const FormWithCats = (props) => {
   const email = value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Invalid email address' : undefined);
@@ -40,9 +20,9 @@ const FormWithCats = (props) => {
       <div>
         <CatFormHeading>
           Here is your cat.
-          <SalmonText onClick={props.clearRandomCat}>
+          <ActionText onClick={props.clearRandomCat}>
             Try again?
-          </SalmonText>
+          </ActionText>
         </CatFormHeading>
         <img
           role="presentation"
@@ -52,9 +32,9 @@ const FormWithCats = (props) => {
   }
 
   return (
-    <FormWrapper>
+    <Wrapper>
       {!result &&
-      <CatForm onSubmit={props.handleSubmit(props.giveRandomCat)}>
+      <Form onSubmit={props.handleSubmit(props.giveRandomCat)}>
         <CatFormHeading>Form.</CatFormHeading>
         <Field
           label="Cat Name:"
@@ -73,9 +53,9 @@ const FormWithCats = (props) => {
         <CatFormButton type="submit">
             Submit the form.
         </CatFormButton>
-      </CatForm> }
+      </Form> }
       {result}
-    </FormWrapper>
+    </Wrapper>
   );
 };
 

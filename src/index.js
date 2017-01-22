@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Match, Miss } from 'react-router';
 
-import { AppWrapper, MainContent, Navigation, NotFound } from './components';
-import { Cats, Humans, FormWithCats, Home } from './containers';
+import { MainContent, NotFound } from './components';
+import { App, Cats, Humans, FormWithCats, Home, Navigation } from './containers';
 import initializeStore from './redux/init';
 
 import './setup.css';
 
 const store = initializeStore();
 
-const App = () => (
+const Boilerplate = () => (
   <Provider store={store}>
     <BrowserRouter>
-      <AppWrapper>
+      <App>
         <Navigation />
         <MainContent>
           <Match exactly pattern="/" component={Home} />
@@ -23,12 +23,12 @@ const App = () => (
           <Match exactly pattern="/humans" component={Humans} />
           <Miss component={NotFound} />
         </MainContent>
-      </AppWrapper>
+      </App>
     </BrowserRouter>
   </Provider>
 );
 
 ReactDOM.render(
-  <App />,
+  <Boilerplate />,
   document.getElementById('mount'),
 );

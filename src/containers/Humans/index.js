@@ -1,14 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
 
-import { Card, Heading } from '../components';
-import { load as loadHumans } from '../redux/modules/humans';
-
-const HumansWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
+import { Card, Heading } from '../../components';
+import Wrapper from './Wrapper';
+import { load as loadHumans } from '../../redux/modules/humans';
 
 class Humans extends Component {
   static propTypes = {
@@ -29,7 +24,7 @@ class Humans extends Component {
     const { humans } = this.props;
 
     return (
-      <HumansWrapper>
+      <Wrapper>
         {humans.length ? humans.map(({ email, photo }) => (
           <Card key={email}>
             <img
@@ -39,7 +34,7 @@ class Humans extends Component {
           </Card>
         )) :
         <Heading>Loading you some humans</Heading>}
-      </HumansWrapper>
+      </Wrapper>
     );
   }
 }
