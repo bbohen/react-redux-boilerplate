@@ -11,7 +11,8 @@ import Form from './Form';
 import Wrapper from './Wrapper';
 
 const FormWithCats = (props) => {
-  const email = value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Invalid email address' : undefined);
+  const email = value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Thats not an email!' : undefined);
+  const number = value => (value && isNaN(Number(value))) ? 'Thats not a number!' : undefined;
   const required = value => (value ? undefined : 'Required');
   let result;
 
@@ -37,18 +38,25 @@ const FormWithCats = (props) => {
       <Form onSubmit={props.handleSubmit(props.giveRandomCat)}>
         <CatFormHeading>Form.</CatFormHeading>
         <Field
-          label="Cat Name:"
-          name="catName"
+          label="Name:"
+          name="name"
           component={FormField}
           type="text"
           validate={required}
         />
         <Field
-          label="Cat Email:"
-          name="catEmail"
+          label="Email:"
+          name="email"
           component={FormField}
           type="text"
           validate={[email, required]}
+        />
+        <Field
+          label="Number:"
+          name="number"
+          component={FormField}
+          type="text"
+          validate={[number, required]}
         />
         <CatFormButton type="submit">
             Submit the form.
