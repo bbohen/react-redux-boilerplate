@@ -1,19 +1,30 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { Card, Heading } from '../../components';
+import { Card, Heading, Modal } from '../../components';
 import Wrapper from './Wrapper';
-import { load as loadHumans } from '../../redux/modules/humans';
+import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';
 
 class Humans extends Component {
   static propTypes = {
     humans: PropTypes.arrayOf(PropTypes.shape),
     humansAreLoaded: PropTypes.bool.isRequired,
     loadHumans: PropTypes.func.isRequired,
+    selectHuman: PropTypes.func,
+    selectedHuman: PropTypes.shape({
+      name: PropTypes.string,
+    }),
   }
 
   static defaultProps = {
-    humans: [{}],
+    humans: [],
+    selectHuman: () => false,
+    selectedHuman: undefined,
+  }
+
+  constructor(props) {
+    super(props);
+    this.selectHuman = this.selectHuman.bind(this);
   }
 
   componentWillMount() {
@@ -24,30 +35,41 @@ class Humans extends Component {
     }
   }
 
+  selectHuman(indexToSelect) {
+    const selectedIndex = typeof indexToSelect === 'number' ? indexToSelect : undefined;
+    this.props.selectHuman(selectedIndex);
+  }
+
   render() {
-    const { humans } = this.props;
+    const { humans, selectedHuman } = this.props;
 
     return (
       <Wrapper>
-        {humans.length ? humans.map(({ email, photo }) => (
-          <Card key={email}>
-            <img
-              alt=""
-              src={photo}
-            />
-          </Card>
-        )) :
+        {selectedHuman &&
+          <Modal onClick={this.selectHuman}>
+            <div>{selectedHuman.name}, {selectedHuman.surname}</div>
+          </Modal>
+        }
+        {humans.length ? humans.map(({ email, photo }, index) => (
+          <Card
+            index={index}
+            key={email}
+            onClick={this.selectHuman}
+            imageUrl={photo}
+          />)) :
         <Heading>Loading you some humans</Heading>}
       </Wrapper>
     );
   }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps({ humans }) {
   return {
-    humans: state.humans.list,
-    humansAreLoaded: state.humans.isLoaded,
+    humans: humans.list,
+    humansAreLoaded: humans.isLoaded,
+    indexOfSelectedHuman: humans.indexOfSelectedHuman,
+    selectedHuman: humans.list[humans.indexOfSelectedHuman],
   };
 }
 
-export default connect(mapStateToProps, { loadHumans })(Humans);
+export default connect(mapStateToProps, { loadHumans, selectHuman })(Humans);

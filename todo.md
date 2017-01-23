@@ -1,8 +1,8 @@
 ### Todo
 
 * content
-    * more form input/validation
-    * human detail
+    * human detail (overlay)
+    * load more cats (react-virtualized)
 * GH link in the header
 * aliasing
 * style constants

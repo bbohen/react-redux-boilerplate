@@ -13,7 +13,7 @@ class Cats extends Component {
   }
 
   static defaultProps = {
-    cats: [{}],
+    cats: [],
   }
 
   componentWillMount() {
@@ -29,13 +29,12 @@ class Cats extends Component {
 
     return (
       <Wrapper>
-        {cats.length ? cats.map(({ data }) => (
-          <Card key={data.id}>
-            <img
-              alt=""
-              src={data.thumbnail}
-            />
-          </Card>
+        {cats.length ? cats.map(({ data }, index) => (
+          <Card
+            index={index}
+            key={data.id}
+            imageUrl={data.thumbnail}
+          />
         )) :
         <Heading>Loading you some cats</Heading>}
       </Wrapper>
