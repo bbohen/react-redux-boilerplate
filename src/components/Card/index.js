@@ -18,8 +18,8 @@ const Card = ({ onClick, imageUrl, index }) => {
 
 Card.propTypes = {
   index: PropTypes.number.isRequired,
-  onClick: PropTypes.func,
   imageUrl: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Card.defaultProps = {

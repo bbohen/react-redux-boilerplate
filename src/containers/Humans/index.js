@@ -1,15 +1,16 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { Card, Heading, Modal } from '../../components';
+import { Card, Heading } from '../../components';
 import Wrapper from './Wrapper';
 import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';
+import Modal from './Modal';
 
 class Humans extends Component {
   static propTypes = {
-    humans: PropTypes.arrayOf(PropTypes.shape),
     humansAreLoaded: PropTypes.bool.isRequired,
     loadHumans: PropTypes.func.isRequired,
+    humans: PropTypes.arrayOf(PropTypes.shape),
     selectHuman: PropTypes.func,
     selectedHuman: PropTypes.shape({
       name: PropTypes.string,
@@ -46,10 +47,13 @@ class Humans extends Component {
     return (
       <Wrapper>
         {selectedHuman &&
-          <Modal onClick={this.selectHuman}>
-            <div>{selectedHuman.name}, {selectedHuman.surname}</div>
-          </Modal>
-        }
+          <Modal
+            email={selectedHuman.email}
+            imageUrl={selectedHuman.photo}
+            onClick={this.selectHuman}
+            name={selectedHuman.name}
+            surname={selectedHuman.surname}
+          />}
         {humans.length ? humans.map(({ email, photo }, index) => (
           <Card
             index={index}

@@ -7,9 +7,9 @@ import { load as loadCats } from '../../redux/modules/cats';
 
 class Cats extends Component {
   static propTypes = {
-    cats: PropTypes.arrayOf(PropTypes.shape),
     catsAreLoaded: PropTypes.bool.isRequired,
     loadCats: PropTypes.func.isRequired,
+    cats: PropTypes.arrayOf(PropTypes.shape),
   }
 
   static defaultProps = {

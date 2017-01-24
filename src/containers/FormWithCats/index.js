@@ -68,9 +68,9 @@ const FormWithCats = (props) => {
 };
 
 FormWithCats.propTypes = {
-  handleSubmit: PropTypes.func.isRequired,
   clearRandomCat: PropTypes.func.isRequired,
   giveRandomCat: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
   randomCat: PropTypes.string,
 };
 

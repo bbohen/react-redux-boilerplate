@@ -49,13 +49,13 @@ const InputField = ({
 InputField.propTypes = {
   input: PropTypes.shape.isRequired,
   label: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
-  type: PropTypes.string,
   meta: PropTypes.shape({
     touched: PropTypes.boolean,
     error: PropTypes.string,
     warning: PropTypes.string,
   }),
+  placeholder: PropTypes.string,
+  type: PropTypes.string,
 };
 
 InputField.defaultProps = {

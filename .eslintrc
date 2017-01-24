@@ -19,7 +19,8 @@
   ],
   "rules": {
     "no-confusing-arrow": 0,
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "react/sort-prop-types": [1, {"requiredFirst": true}]
   },
   "globals": {
     "expect": true,
