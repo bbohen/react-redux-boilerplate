@@ -7,6 +7,7 @@
 * GH link in the header
 * aliasing
 * style constants
+* raise coverage
 * comments
 * offline support
 * transitions (color at first?)
