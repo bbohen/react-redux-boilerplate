@@ -54,7 +54,8 @@ export function clearRandomCat() {
 export function load() {
   return {
     type: LOAD_CATS,
-    promise: fetch('https://www.reddit.com/r/cats/top/.json')
+    promise: fetch('https://www.reddit.com/r/cats/top.json?limit=100')
+    // promise: fetch('https://www.reddit.com/r/cats/new/?app=res&count=75.json')
       .then(response => response.json()),
   };
 }

@@ -1,8 +1,5 @@
 ### Todo
 
-* content
-    * human detail (overlay)
-    * load more cats (react-virtualized)
 * icons
 * GH link in the header
 * aliasing
@@ -14,3 +11,5 @@
 * spinners
 * latest React HMR (Webpack dev server --hot not enough?)
 * responsive
+* final style lookover
+* final structure cleanup
