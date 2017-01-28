@@ -3,6 +3,7 @@
 * content
     * human detail (overlay)
     * load more cats (react-virtualized)
+* icons
 * GH link in the header
 * aliasing
 * style constants

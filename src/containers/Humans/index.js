@@ -3,14 +3,18 @@ import { connect } from 'react-redux';
 
 import { Card, Heading } from '../../components';
 import Wrapper from './Wrapper';
-import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';
 import Modal from './Modal';
+import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';
+import { load as loadLoremIpsum } from '../../redux/modules/loremIpsum';
 
 class Humans extends Component {
   static propTypes = {
     humansAreLoaded: PropTypes.bool.isRequired,
     loadHumans: PropTypes.func.isRequired,
+    loadLoremIpsum: PropTypes.func.isRequired,
+    loremIpsumIsLoaded: PropTypes.bool.isRequired,
     humans: PropTypes.arrayOf(PropTypes.shape),
+    loremIpsum: PropTypes.string,
     selectHuman: PropTypes.func,
     selectedHuman: PropTypes.shape({
       name: PropTypes.string,
@@ -19,6 +23,7 @@ class Humans extends Component {
 
   static defaultProps = {
     humans: [],
+    loremIpsum: 'Loading...',
     selectHuman: () => false,
     selectedHuman: undefined,
   }
@@ -29,10 +34,14 @@ class Humans extends Component {
   }
 
   componentWillMount() {
-    const { humansAreLoaded } = this.props;
+    const { humansAreLoaded, loremIpsumIsLoaded } = this.props;
 
     if (!humansAreLoaded) {
       this.props.loadHumans();
+    }
+
+    if (!loremIpsumIsLoaded) {
+      this.props.loadLoremIpsum();
     }
   }
 
@@ -42,15 +51,19 @@ class Humans extends Component {
   }
 
   render() {
-    const { humans, selectedHuman } = this.props;
+    const { humans, loremIpsum, selectedHuman } = this.props;
 
     return (
       <Wrapper>
         {selectedHuman &&
           <Modal
+            age={selectedHuman.age}
+            bio={loremIpsum}
+            birthday={selectedHuman.birthday}
             email={selectedHuman.email}
             imageUrl={selectedHuman.photo}
             onClick={this.selectHuman}
+            phone={selectedHuman.phone}
             name={selectedHuman.name}
             surname={selectedHuman.surname}
           />}
@@ -67,13 +80,20 @@ class Humans extends Component {
   }
 }
 
-function mapStateToProps({ humans }) {
+function mapStateToProps({ humans, loremIpsum }) {
   return {
     humans: humans.list,
     humansAreLoaded: humans.isLoaded,
     indexOfSelectedHuman: humans.indexOfSelectedHuman,
+    loremIpsumIsLoaded: loremIpsum.isLoaded,
+    loremIpsum: loremIpsum.content,
     selectedHuman: humans.list[humans.indexOfSelectedHuman],
   };
 }
 
-export default connect(mapStateToProps, { loadHumans, selectHuman })(Humans);
+export default connect(
+  mapStateToProps,
+  { loadHumans,
+    loadLoremIpsum,
+    selectHuman,
+  })(Humans);
