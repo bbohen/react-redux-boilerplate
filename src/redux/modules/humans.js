@@ -36,7 +36,7 @@ export default function reducer(state = intialState, action = {}) {
 export function load() {
   return {
     type: LOAD_HUMANS,
-    promise: fetch('http://uinames.com/api/?ext&amount=25')
+    promise: fetch('http://uinames.com/api/?ext&amount=50')
       .then(response => response.json()),
   };
 }

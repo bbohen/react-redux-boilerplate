@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Anchor = styled.a`
   color: teal;
   font-size: 2em;
+  line-height: 0;
   margin-left: auto;
 `;
 

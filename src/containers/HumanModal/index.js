@@ -1,29 +1,49 @@
 import React, { PropTypes } from 'react';
 import styled from 'styled-components';
 
+import EnvelopeIcon from 'react-icons/lib/fa/envelope';
+import BirthdayIcon from 'react-icons/lib/fa/birthday-cake';
+import PhoneIcon from 'react-icons/lib/fa/phone';
+
 import { Heading, Modal } from '../../components';
-import ModalHeaderDetails from './ModalHeaderDetails';
-import ModalHeader from './ModalHeader';
-import ModalImage from './ModalImage';
+import Details from './Details';
+import Header from './Header';
+import Icon from './Icon';
+import Image from './Image';
 
 const ModalHeaderHeading = styled(Heading)`
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 `;
 
 const HumanModal = ({ age, bio, birthday, imageUrl, email, name, phone, onClick, surname }) =>
   <Modal onClick={onClick}>
-    <ModalHeader>
-      <ModalImage
+    <Header>
+      <Image
         alt=""
         src={imageUrl}
       />
-      <ModalHeaderDetails>
+      <Details>
         <ModalHeaderHeading>{name}, {surname}</ModalHeaderHeading>
-        <div>Email: {email}</div>
-        <div>Age: {age} (DOB: {birthday.mdy})</div>
-        <div>Phone: {phone}</div>
-      </ModalHeaderDetails>
-    </ModalHeader>
+        <div>
+          <Icon>
+            <EnvelopeIcon />
+          </Icon>
+          {email}
+        </div>
+        <div>
+          <Icon>
+            <BirthdayIcon />
+          </Icon>
+          {birthday.mdy} ({age} years old)
+        </div>
+        <div>
+          <Icon>
+            <PhoneIcon />
+          </Icon>
+          {phone}
+        </div>
+      </Details>
+    </Header>
     <div>{bio}</div>
   </Modal>;
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { Card, Heading } from '../../components';
 import Wrapper from './Wrapper';
-import Modal from './Modal';
+import HumanModal from '../HumanModal';
 import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';
 import { load as loadLoremIpsum } from '../../redux/modules/loremIpsum';
 
@@ -56,7 +56,7 @@ class Humans extends Component {
     return (
       <Wrapper>
         {selectedHuman &&
-          <Modal
+          <HumanModal
             age={selectedHuman.age}
             bio={loremIpsum}
             birthday={selectedHuman.birthday}

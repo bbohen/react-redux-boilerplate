@@ -2,9 +2,9 @@ import { Link } from 'react-router';
 import styled from 'styled-components';
 
 const NavLink = styled(Link)`
-  border-bottom: 1px solid ivory;
   color: teal;
   display: block;
+  padding: 1em 0;
   text-decoration: none;
   text-transform: uppercase;
 `;

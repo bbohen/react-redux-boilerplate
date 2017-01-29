@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Content = styled.div`
-  width: 1000px;
+  width: 80%;
 `;
 
 export default Content;

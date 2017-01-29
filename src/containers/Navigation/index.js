@@ -10,21 +10,22 @@ import LogoLink from './LogoLink';
 import NavLink from './NavLink';
 
 const activeStyle = {
-  borderBottom: '1px solid LightSalmon',
+  color: 'LightSalmon',
 };
 
 const Navigation = () =>
   <Wrapper>
     <Content>
+      <Heading>
+        <LogoLink
+          activeStyle={activeStyle}
+          isActive={({ pathname }) => pathname === '/'}
+          to="/"
+        >
+          React Redux Boilerplate
+        </LogoLink>
+      </Heading>
       <List>
-        <Heading>
-          <LogoLink
-            isActive={({ pathname }) => pathname === '/'}
-            to="/"
-          >
-            React Redux Boilerplate
-          </LogoLink>
-        </Heading>
         <Item>
           <NavLink
             activeStyle={activeStyle}
@@ -52,8 +53,8 @@ const Navigation = () =>
             Form
           </NavLink>
         </Item>
-        <GitHubLink />
       </List>
+      <GitHubLink />
     </Content>
   </Wrapper>;
 

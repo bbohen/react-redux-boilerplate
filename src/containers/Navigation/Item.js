@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavigationItem = styled.li`
-  margin-left: 1em;
+  margin: 0 .5em 0 .5em;
 `;
 
 export default NavigationItem;
