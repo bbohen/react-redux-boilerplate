@@ -68,6 +68,7 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       containers: path.resolve(__dirname, 'src/containers'),
+      theme: path.resolve(__dirname, 'src/theme.js'),
     }
   },
   entry: {

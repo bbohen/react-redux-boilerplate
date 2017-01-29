@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import { SECONDARY_COLOR } from 'theme';
+
 const ActionText = styled.div`
-  color: LightSalmon;
+  color: ${SECONDARY_COLOR};
   cursor: pointer;
 `;
 

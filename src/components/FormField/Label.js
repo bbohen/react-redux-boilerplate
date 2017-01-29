@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 
+import { PRIMARY_COLOR, SECONDARY_COLOR } from 'theme';
+
 const Label = styled.div`
   color: ${({ error, warning }) => {
     if (error) {
-      return 'lightSalmon';
+      return SECONDARY_COLOR;
     } else if (warning) {
       return 'yellow';
     }
 
-    return 'teal';
+    return PRIMARY_COLOR;
   }}
 `;
 

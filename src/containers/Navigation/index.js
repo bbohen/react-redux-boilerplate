@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 
 import { Heading } from 'components';
+import { SECONDARY_COLOR } from 'theme';
+
 import Wrapper from './Wrapper';
 import Content from './Content';
 import GitHubLink from './GitHubLink';
@@ -10,7 +12,7 @@ import LogoLink from './LogoLink';
 import NavLink from './NavLink';
 
 const activeStyle = {
-  color: 'LightSalmon',
+  color: SECONDARY_COLOR,
 };
 
 const Navigation = () =>

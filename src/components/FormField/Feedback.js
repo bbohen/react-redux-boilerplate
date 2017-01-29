@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
+import { PRIMARY_COLOR, SECONDARY_COLOR } from 'theme';
+
 const Feedback = styled.div`
   border: ${({ error, warning }) => {
-    let color = 'teal';
+    let color = PRIMARY_COLOR;
 
     if (error) {
-      color = 'lightSalmon';
+      color = SECONDARY_COLOR;
     } else if (warning) {
       color = 'yellow';
     }

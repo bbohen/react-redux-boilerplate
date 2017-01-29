@@ -1,8 +1,10 @@
 import { Link } from 'react-router';
 import styled from 'styled-components';
 
+import { PRIMARY_COLOR } from 'theme';
+
 const LogoLink = styled(Link)`
-  color: teal;
+  color: ${PRIMARY_COLOR};
   text-decoration: none;
 `;
 
