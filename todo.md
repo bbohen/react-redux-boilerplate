@@ -1,7 +1,8 @@
 ### Todo
 
 * icons
-* GH link in the header
+  * GH link in the header
+  * human details
 * aliasing
 * style constants
 * raise coverage

@@ -3,6 +3,7 @@ import React, { PropTypes } from 'react';
 import { Heading } from '../../components';
 import Wrapper from './Wrapper';
 import Content from './Content';
+import GitHubLink from './GitHubLink';
 import List from './List';
 import Item from './Item';
 import LogoLink from './LogoLink';
@@ -51,6 +52,7 @@ const Navigation = () =>
             Form
           </NavLink>
         </Item>
+        <GitHubLink />
       </List>
     </Content>
   </Wrapper>;
