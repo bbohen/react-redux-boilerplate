@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import { Heading } from '../../components';
+import { Heading } from 'components';
 import Wrapper from './Wrapper';
 import Content from './Content';
 import GitHubLink from './GitHubLink';
@@ -18,7 +18,6 @@ const Navigation = () =>
     <Content>
       <Heading>
         <LogoLink
-          activeStyle={activeStyle}
           isActive={({ pathname }) => pathname === '/'}
           to="/"
         >

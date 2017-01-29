@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading } from '../../components';
+import { Heading } from 'components';
 
 const Home = () => (
   <div>

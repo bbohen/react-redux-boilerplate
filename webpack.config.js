@@ -63,6 +63,13 @@ if (isProd) {
 }
 
 module.exports = {
+  devtool: 'source-map',
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      containers: path.resolve(__dirname, 'src/containers'),
+    }
+  },
   entry: {
     js: './src/index.js',
     vendor: [
@@ -81,7 +88,6 @@ module.exports = {
     filename: 'index.[hash].js',
     path: path.resolve(__dirname, 'dist/assets'),
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {

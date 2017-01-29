@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { Card, Heading } from '../../components';
+import { Card, Heading } from 'components';
 import Wrapper from './Wrapper';
 import HumanModal from '../HumanModal';
 import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';

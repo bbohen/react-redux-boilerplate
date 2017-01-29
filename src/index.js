@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Match, Miss } from 'react-router';
 
-import { MainContent, NotFound } from './components';
-import { App, Cats, Humans, FormWithCats, Home, Navigation } from './containers';
+import { MainContent, NotFound } from 'components';
+import { App, Cats, Humans, FormWithCats, Home, Navigation } from 'containers';
 import initializeStore from './redux/init';
 
 import './setup.css';
