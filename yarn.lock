@@ -4983,11 +4983,11 @@ resolve-pathname@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-2.0.2.tgz#e55c016eb2e9df1de98e85002282bfb38c630436"
 
-resolve@1.1.7, resolve@^1.1.6:
+resolve@1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
-resolve@^1.2.0:
+resolve@^1.1.6, resolve@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.2.0.tgz#9589c3f2f6149d1417a40becc1663db6ec6bc26c"
 

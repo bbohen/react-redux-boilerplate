@@ -1,7 +1,5 @@
 ### Todo
 
-* test latest React HMR (Webpack dev server --hot not enough?)
-* fluid layout
 * raise coverage
 * comments
   * more where needed
@@ -10,9 +8,11 @@
   * style
   * structure
   * react warnings
+* readme
 * ⛵
 
-### Future ideas
-* dynamic theming
+### Future ideas(?)
+* react hot loader 3
+* dynamic theming, color pickers
 * transitions
-* immutable?
+* immutable

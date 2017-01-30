@@ -8,7 +8,7 @@ const MainWrapper = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 1em;
-  padding: 1em;
+  padding-top: 1em;
 `;
 
 export default MainWrapper;
