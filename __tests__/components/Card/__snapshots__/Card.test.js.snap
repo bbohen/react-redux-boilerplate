@@ -1,0 +1,29 @@
+exports[`<Card /> defaults when given no click event 1`] = `
+<div
+  className="iGGbCd"
+  onClick={[Function]}>
+  <img
+    alt=""
+    src="" />
+</div>
+`;
+
+exports[`<Card /> renders a card component 1`] = `
+<div
+  className="iGGbCd"
+  onClick={[Function]}>
+  <img
+    alt=""
+    src="" />
+</div>
+`;
+
+exports[`<Card /> responds to a click event 1`] = `
+<div
+  className="iGGbCd"
+  onClick={[Function]}>
+  <img
+    alt=""
+    src="" />
+</div>
+`;

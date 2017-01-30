@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router';
 
-import { Navigation } from '../../src/containers';
+import { Navigation } from '../../../src/containers';
 
 describe('<Navigation />', () => {
   it('renders the navigation component', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import { NotFound } from '../../src/components';
+import { NotFound } from '../../../src/components';
 
 describe('<NotFound />', () => {
   it('renders the not found component', () => {
