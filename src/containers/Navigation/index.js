@@ -13,6 +13,7 @@ import NavLink from './NavLink';
 
 const activeStyle = {
   color: SECONDARY_COLOR,
+  borderBottom: `1px solid ${SECONDARY_COLOR}`,
 };
 
 const Navigation = () =>
