@@ -6,7 +6,7 @@ import { Card } from '../../src/components';
 describe('<Card />', () => {
   it('renders a card component', () => {
     const component = renderer.create(
-      <Card>
+      <Card index={1}>
         <p>Test</p>
       </Card>,
     );

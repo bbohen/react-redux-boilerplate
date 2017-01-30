@@ -1,8 +1,9 @@
 exports[`<Card /> renders a card component 1`] = `
 <div
-  className="ckkQvH">
-  <p>
-    Test
-  </p>
+  className="iGGbCd"
+  onClick={[Function]}>
+  <img
+    alt=""
+    src="" />
 </div>
 `;

@@ -55,6 +55,11 @@
     "verbose": true,
     "collectCoverageFrom": [
       "src/**/*.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "^components": "<rootDir>/src/components",
+      "^containers": "<rootDir>/src/containers",
+      "^theme": "<rootDir>/src/theme.js"
+    }
   }
 }
