@@ -1,0 +1,43 @@
+exports[`<FormField /> renders a form field component 1`] = `
+<div
+  className="bzWcLi">
+  <input
+    className="iZQdaK"
+    placeholder=""
+    type="text" />
+</div>
+`;
+
+exports[`<FormField /> renders a form field with a label 1`] = `
+<div
+  className="bzWcLi">
+  <div
+    className="bjhZVI">
+    This field's label
+  </div>
+  <input
+    className="iZQdaK"
+    placeholder=""
+    type="text" />
+</div>
+`;
+
+exports[`<FormField /> renders a form field with a warning 1`] = `
+<div
+  className="bzWcLi">
+  <input
+    className="iZQdaK"
+    placeholder=""
+    type="text" />
+</div>
+`;
+
+exports[`<FormField /> renders a form field with an error 1`] = `
+<div
+  className="bzWcLi">
+  <input
+    className="iZQdaK"
+    placeholder=""
+    type="text" />
+</div>
+`;

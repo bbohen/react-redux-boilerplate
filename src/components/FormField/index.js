@@ -4,7 +4,7 @@ import Input from './Input';
 import Label from './Label';
 import Wrapper from './Wrapper';
 
-const InputField = ({
+const FormField = ({
   input,
   label,
   placeholder,
@@ -13,14 +13,16 @@ const InputField = ({
 }) => {
   const showError = touched && error;
   const showWarning = touched && warning;
+
   return (
     <Wrapper>
+      {label &&
       <Label
         error={showError}
         warning={showWarning}
       >
         {label}
-      </Label>
+      </Label> }
       <Input
         error={showError}
         warning={showWarning}
@@ -46,9 +48,9 @@ const InputField = ({
   );
 };
 
-InputField.propTypes = {
+FormField.propTypes = {
   input: PropTypes.shape.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   meta: PropTypes.shape({
     touched: PropTypes.boolean,
     error: PropTypes.string,
@@ -58,7 +60,8 @@ InputField.propTypes = {
   type: PropTypes.string,
 };
 
-InputField.defaultProps = {
+FormField.defaultProps = {
+  label: undefined,
   placeholder: '',
   type: 'text',
   meta: {
@@ -66,4 +69,4 @@ InputField.defaultProps = {
   },
 };
 
-export default InputField;
+export default FormField;

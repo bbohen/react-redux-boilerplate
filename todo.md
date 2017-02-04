@@ -12,6 +12,7 @@
 * ⛵
 
 ### Future ideas(?)
+
 * react hot loader 3
 * dynamic theming, color pickers
 * transitions
