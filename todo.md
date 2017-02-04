@@ -1,6 +1,5 @@
 ### Todo
 
-* raise coverage
 * comments
   * more where needed
   * standardize
