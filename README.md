@@ -1,10 +1,8 @@
 # React Redux Boilerplate
 
-:construction: Work in progress :construction:
-
 ## About
 
-A scalable foundation for an app using the newest versions of popular tools in the react ecosystem, it uses the following technologies.
+A scalable pattern for apps using the newest versions of popular tools in the react ecosystem. The goal is to keep this up to date with the latest tools & patterns. Feedback,  ideas & suggestions are all welcome. The following technologies are used...
 
 * [React](https://github.com/facebook/react)
   * Declarative library for building user interfaces
@@ -33,14 +31,13 @@ A scalable foundation for an app using the newest versions of popular tools in t
 
 ## Development
 
-1. Install [Yarn](https://yarnpkg.com/en/docs/getting-started)
-2. Clone the repo `git clone --depth=1 https://github.com/bbohen/react-redux-boilerplate.git` (or fork)
+1. Clone the repo `git clone --depth=1 https://github.com/bbohen/react-redux-boilerplate.git` (or fork)
+2. Install [Yarn](https://yarnpkg.com/en/docs/getting-started)
 3. `yarn start`
 
 ## Testing
 
-1. `yarn test`
+Still working on improving coverage...
 
-## Scaling
-
-Placeholder
+* `yarn test` to run tests
+* `yarn test:coverage` to run tests & view coverage report
