@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import { PRIMARY_COLOR } from 'theme';
+import { LIGHT_COLOR, PRIMARY_COLOR } from 'theme';
 
 const Button = styled.button`
-  background: ${PRIMARY_COLOR};
   border: none;
-  color: ivory;
+  background: ${PRIMARY_COLOR};
+  color: ${LIGHT_COLOR};
   padding: 1em;
 `;
 

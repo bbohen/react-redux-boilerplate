@@ -12,6 +12,7 @@ Included technologies:
   * Declarative library for building user interfaces
 * [Redux](https://github.com/reactjs/redux)
   * Predictable state container
+  * The [chrome dev tools extension](https://github.com/zalmoxisus/redux-devtools-extension) is supported
 * [React Redux](https://github.com/reactjs/react-redux)
   * Official React bindings for Redux
 * [React Router 4](https://github.com/ReactTraining/react-router)
@@ -22,6 +23,7 @@ Included technologies:
   * Sensible promise handling and middleware for redux
 * [Styled Components](https://github.com/styled-components/styled-components)
   * Visual primitives for the component age
+  * If you're using Atom, I recommend [the language-babel package](https://atom.io/packages/language-babel) for editor support
 * [Webpack 2](https://github.com/webpack/webpack)
   * Bundling, chunking and code splitting
 * [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
