@@ -7,7 +7,7 @@ import { MainContent, NotFound } from 'components';
 import { App, Cats, Humans, FormWithCats, Home, Navigation } from 'containers';
 import initializeStore from './redux/init';
 
-import './setup.css';
+import './globalStyles';
 
 const store = initializeStore();
 

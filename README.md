@@ -2,7 +2,7 @@
 
 ## About
 
-A scalable pattern for apps using the newest versions of popular tools in the react ecosystem. The goal is to continually keep this up to date with the latest tools & patterns. Feedback,  ideas & suggestions are all welcome.
+A scalable pattern for apps using the newest versions of popular tools in the react ecosystem. The goal is to continually keep this up to date with the latest tools & patterns. Feedback,  ideas & suggestions are all welcome. There is a [small list of stuff](todo.md) I would like to improve & add.
 
 If you run the app you will notice there are humans, cats and a form. The humans are generated from [uifaces](https://uinames.com/), the cats come from [reddit](https://www.reddit.com/r/cats/) and the form generates a random cat gif from [giphy](https://www.giphy.com). The general layout and design is likely not the best around but the focus of this repo is the structure, performance and composition of the tools being used.
 

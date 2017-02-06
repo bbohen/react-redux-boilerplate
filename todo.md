@@ -1,18 +1,8 @@
 ### Todo
 
-* comments
-  * more where needed
-  * standardize
-* full code review
-  * style
-  * structure
-  * react warnings
-* readme
-* ⛵
-
-### Future ideas(?)
-
-* react hot loader 3
-* dynamic theming, color pickers
-* transitions
-* immutable
+* improve the ui / functionality of humans & cats
+* dynamic theming (demo via color picker)
+* transitions?
+* some sort of content on home?
+* immutable.js
+* react-virtualized with infinite loading for cats
