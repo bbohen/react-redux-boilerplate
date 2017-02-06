@@ -1,29 +1,32 @@
 exports[`<Card /> defaults when given no click event 1`] = `
 <div
-  className="iGGbCd"
+  className="jkwvgr"
   onClick={[Function]}>
   <img
     alt=""
+    className="bMAZFf"
     src="" />
 </div>
 `;
 
 exports[`<Card /> renders a card component 1`] = `
 <div
-  className="iGGbCd"
+  className="jkwvgr"
   onClick={[Function]}>
   <img
     alt=""
+    className="bMAZFf"
     src="" />
 </div>
 `;
 
 exports[`<Card /> responds to a click event 1`] = `
 <div
-  className="iGGbCd"
+  className="jkwvgr"
   onClick={[Function]}>
   <img
     alt=""
+    className="bMAZFf"
     src="" />
 </div>
 `;

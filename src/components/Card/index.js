@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 
+import Img from './Img';
 import Wrapper from './Wrapper';
 
 const Card = ({ onClick, imageUrl, index }) => {
@@ -8,7 +9,7 @@ const Card = ({ onClick, imageUrl, index }) => {
     <Wrapper
       onClick={handleClick}
     >
-      <img
+      <Img
         alt=""
         src={imageUrl}
       />
