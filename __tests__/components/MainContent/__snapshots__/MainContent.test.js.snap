@@ -1,0 +1,14 @@
+exports[`<MainContent /> renders a card component 1`] = `
+<div
+  className="iFwtGN">
+  <div
+    className="ffXoGG">
+    <h1>
+      Child 1
+    </h1>
+    <p>
+      Child 2
+    </p>
+  </div>
+</div>
+`;
