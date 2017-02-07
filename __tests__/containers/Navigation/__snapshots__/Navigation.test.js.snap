@@ -4,21 +4,25 @@ exports[`<Navigation /> renders the navigation component 1`] = `
   <div
     className="eIXQOS">
     <h2
-      className="dQgEds">
+      className="bhiNsp">
       <a
         className="htNTav"
         href="/"
         onClick={[Function]}
-        style={Object {}}>
+        style={
+          Object {
+            "textShadow": "-4px -1px 3px lightSalmon",
+          }
+        }>
         React Redux Boilerplate
       </a>
     </h2>
     <ul
       className="haBumT">
       <li
-        className="cdmhDk">
+        className="kLWMzb">
         <a
-          className="kKLIK"
+          className="cphMiI"
           href="/cats"
           onClick={[Function]}
           style={Object {}}>
@@ -26,9 +30,9 @@ exports[`<Navigation /> renders the navigation component 1`] = `
         </a>
       </li>
       <li
-        className="cdmhDk">
+        className="kLWMzb">
         <a
-          className="kKLIK"
+          className="cphMiI"
           href="/humans"
           onClick={[Function]}
           style={Object {}}>
@@ -36,9 +40,9 @@ exports[`<Navigation /> renders the navigation component 1`] = `
         </a>
       </li>
       <li
-        className="cdmhDk">
+        className="kLWMzb">
         <a
-          className="kKLIK"
+          className="cphMiI"
           href="/form"
           onClick={[Function]}
           style={Object {}}>

@@ -107,6 +107,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(woff|ttf|eot|svg)(\?v=[a-z0-9]\.[a-z0-9]\.[a-z0-9])?$/,
+        loader: 'file-loader',
+      }
     ],
   },
   plugins,

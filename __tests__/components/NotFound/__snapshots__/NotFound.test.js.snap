@@ -1,6 +1,6 @@
 exports[`<NotFound /> renders the not found component 1`] = `
 <h2
-  className="dQgEds">
+  className="bhiNsp">
   Not Found!
 </h2>
 `;

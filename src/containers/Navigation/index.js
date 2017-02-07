@@ -12,8 +12,7 @@ import LogoLink from './LogoLink';
 import NavLink from './NavLink';
 
 const activeStyle = {
-  color: SECONDARY_COLOR,
-  borderBottom: `1px solid ${SECONDARY_COLOR}`,
+  textShadow: `-4px -1px 3px ${SECONDARY_COLOR}`,
 };
 
 const Navigation = () =>
@@ -21,6 +20,7 @@ const Navigation = () =>
     <Content>
       <Heading>
         <LogoLink
+          activeStyle={activeStyle}
           isActive={({ pathname }) => pathname === '/'}
           to="/"
         >
