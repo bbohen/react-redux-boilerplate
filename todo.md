@@ -1,5 +1,6 @@
 ### Todo
 
+* raise coverage
 * improve the ui / functionality of humans & cats
 * dynamic theming (demo via color picker)
 * transitions?

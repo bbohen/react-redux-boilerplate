@@ -12,7 +12,7 @@ import LogoLink from './LogoLink';
 import NavLink from './NavLink';
 
 const activeStyle = {
-  textShadow: `-4px -1px 3px ${SECONDARY_COLOR}`,
+  textShadow: `-1px -1px 3px ${SECONDARY_COLOR}`,
 };
 
 const Navigation = () =>
