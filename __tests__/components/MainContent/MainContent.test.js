@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import { MainContent } from '../../../src/components';
 
 describe('<MainContent />', () => {
-  it('renders a child component', () => {
+  it('renders children', () => {
     const component = renderer.create(
       <MainContent>
         <h1>Child 1</h1>

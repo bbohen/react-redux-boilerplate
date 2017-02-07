@@ -1,16 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import { Card } from '../../../src/components';
+import { Modal } from '../../../src/components';
 
 const mockFunction = jest.fn();
 
-describe('<Card />', () => {
-  it('renders a card component', () => {
+describe('<Modal />', () => {
+  it('renders a child component', () => {
     const component = renderer.create(
-      <Card index={1}>
-        <p>Test</p>
-      </Card>,
+      <Modal>
+        <div>A child component</div>
+      </Modal>,
     );
     const tree = component.toJSON();
 
@@ -18,11 +18,9 @@ describe('<Card />', () => {
   });
   it('defaults when given no click event', () => {
     const component = renderer.create(
-      <Card
-        index={1}
-      >
-        <p>Test</p>
-      </Card>,
+      <Modal>
+        <div>A child component</div>
+      </Modal>,
     );
     let tree = component.toJSON();
 
@@ -31,14 +29,11 @@ describe('<Card />', () => {
 
     expect(tree).toMatchSnapshot();
   });
-  it('responds to a click event', () => {
+  it('executes a passed click event', () => {
     const component = renderer.create(
-      <Card
-        index={1}
-        onClick={mockFunction}
-      >
-        <p>Test</p>
-      </Card>,
+      <Modal onClick={mockFunction}>
+        <div>A child component</div>
+      </Modal>,
     );
     let tree = component.toJSON();
 

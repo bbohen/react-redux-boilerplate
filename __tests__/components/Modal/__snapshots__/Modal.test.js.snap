@@ -1,0 +1,38 @@
+exports[`<Modal /> defaults when given no click event 1`] = `
+<div
+  className="gQVthV"
+  onClick={[Function]}>
+  <div
+    className="grVJNr">
+    <div>
+      A child component
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> executes a passed click event 1`] = `
+<div
+  className="gQVthV"
+  onClick={[Function]}>
+  <div
+    className="grVJNr">
+    <div>
+      A child component
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> renders a child component 1`] = `
+<div
+  className="gQVthV"
+  onClick={[Function]}>
+  <div
+    className="grVJNr">
+    <div>
+      A child component
+    </div>
+  </div>
+</div>
+`;
