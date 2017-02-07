@@ -86,7 +86,7 @@ function mapStateToProps({ humans, loremIpsum }) {
     humansAreLoaded: humans.isLoaded,
     indexOfSelectedHuman: humans.indexOfSelectedHuman,
     loremIpsumIsLoaded: loremIpsum.isLoaded,
-    loremIpsum: loremIpsum.content,
+    loremIpsum: loremIpsum.content[0] || '',
     selectedHuman: humans.list[humans.indexOfSelectedHuman],
   };
 }

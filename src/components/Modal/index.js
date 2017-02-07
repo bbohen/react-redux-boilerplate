@@ -11,7 +11,10 @@ const Modal = ({ children, onClick }) =>
   </Wrapper>;
 
 Modal.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.element,
+  ]).isRequired,
   onClick: PropTypes.func,
 };
 
