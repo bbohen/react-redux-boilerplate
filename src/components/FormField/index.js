@@ -49,7 +49,7 @@ const FormField = ({
 };
 
 FormField.propTypes = {
-  input: PropTypes.shape.isRequired,
+  input: PropTypes.shape().isRequired,
   label: PropTypes.string,
   meta: PropTypes.shape({
     touched: PropTypes.boolean,

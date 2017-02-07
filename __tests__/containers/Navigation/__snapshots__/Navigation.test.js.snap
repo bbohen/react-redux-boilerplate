@@ -11,7 +11,7 @@ exports[`<Navigation /> renders the navigation component 1`] = `
         onClick={[Function]}
         style={
           Object {
-            "textShadow": "-4px -1px 3px lightSalmon",
+            "textShadow": "-1px -1px 3px lightSalmon",
           }
         }>
         React Redux Boilerplate
