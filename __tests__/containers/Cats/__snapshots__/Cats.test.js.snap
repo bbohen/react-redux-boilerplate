@@ -1,0 +1,65 @@
+exports[`<UnconnectedCats /> renders an empty cats container 1`] = `
+<div
+  className="csKSle">
+  <h2
+    className="bhiNsp">
+    Loading you some cats
+  </h2>
+</div>
+`;
+
+exports[`<UnconnectedCats /> renders some cats in a cats container 1`] = `
+<div
+  className="csKSle">
+  <div
+    className="jkwvgr"
+    onClick={[Function]}>
+    <img
+      alt=""
+      className="bMAZFf"
+      src="cat-href-1" />
+  </div>
+  <div
+    className="jkwvgr"
+    onClick={[Function]}>
+    <img
+      alt=""
+      className="bMAZFf"
+      src="cat-href-2" />
+  </div>
+  <div
+    className="jkwvgr"
+    onClick={[Function]}>
+    <img
+      alt=""
+      className="bMAZFf"
+      src="cat-href-3" />
+  </div>
+</div>
+`;
+
+exports[`<UnconnectedCats /> should map cat state to props properly 1`] = `
+Object {
+  "cats": Array [
+    Object {
+      "data": Object {
+        "id": "foo1",
+        "thumbnail": "cat-href-1",
+      },
+    },
+    Object {
+      "data": Object {
+        "id": "foo2",
+        "thumbnail": "cat-href-2",
+      },
+    },
+    Object {
+      "data": Object {
+        "id": "foo3",
+        "thumbnail": "cat-href-3",
+      },
+    },
+  ],
+  "catsAreLoaded": true,
+}
+`;

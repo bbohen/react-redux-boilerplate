@@ -5,7 +5,7 @@ import { Card, Heading } from 'components';
 import Wrapper from './Wrapper';
 import { load as loadCats } from '../../redux/modules/cats';
 
-class Cats extends Component {
+export class UnconnectedCats extends Component {
   static propTypes = {
     catsAreLoaded: PropTypes.bool.isRequired,
     loadCats: PropTypes.func.isRequired,
@@ -42,11 +42,11 @@ class Cats extends Component {
   }
 }
 
-function mapStateToProps(state) {
+export function mapStateToProps(state) {
   return {
     cats: state.cats.list,
     catsAreLoaded: state.cats.isLoaded,
   };
 }
 
-export default connect(mapStateToProps, { loadCats })(Cats);
+export default connect(mapStateToProps, { loadCats })(UnconnectedCats);
