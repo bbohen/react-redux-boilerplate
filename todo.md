@@ -10,5 +10,3 @@
 * transitions?
 * some sort of content on home?
 * immutable.js
-* react-virtualized with infinite loading for cats
-* party mode
