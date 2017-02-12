@@ -37,6 +37,7 @@ describe('<UnconnectedCats />', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
   it('renders some cats in a cats container', () => {
     const component = renderer.create(
       <UnconnectedCats
@@ -49,6 +50,7 @@ describe('<UnconnectedCats />', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
   it('tries to get you cats if you have none', () => {
     renderer.create(
       <UnconnectedCats
@@ -59,7 +61,8 @@ describe('<UnconnectedCats />', () => {
 
     expect(mockFunction.mock.calls.length).toBe(1);
   });
-  it('should map cat state to props properly', () => {
+
+  it('should map state to props properly', () => {
     const props = mapStateToProps({
       cats: {
         isLoaded: true,

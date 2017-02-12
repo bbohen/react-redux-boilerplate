@@ -7,7 +7,7 @@ import HumanModal from '../HumanModal';
 import { load as loadHumans, select as selectHuman } from '../../redux/modules/humans';
 import { load as loadLoremIpsum } from '../../redux/modules/loremIpsum';
 
-class Humans extends Component {
+export class UnconnectedHumans extends Component {
   static propTypes = {
     humansAreLoaded: PropTypes.bool.isRequired,
     loadHumans: PropTypes.func.isRequired,
@@ -46,8 +46,7 @@ class Humans extends Component {
   }
 
   selectHuman(indexToSelect) {
-    const selectedIndex = typeof indexToSelect === 'number' ? indexToSelect : undefined;
-    this.props.selectHuman(selectedIndex);
+    this.props.selectHuman(indexToSelect);
   }
 
   render() {
@@ -80,13 +79,13 @@ class Humans extends Component {
   }
 }
 
-function mapStateToProps({ humans, loremIpsum }) {
+export function mapStateToProps({ humans, loremIpsum }) {
   return {
     humans: humans.list,
     humansAreLoaded: humans.isLoaded,
     indexOfSelectedHuman: humans.indexOfSelectedHuman,
     loremIpsumIsLoaded: loremIpsum.isLoaded,
-    loremIpsum: loremIpsum.content[0] || '',
+    loremIpsum: loremIpsum.content[0],
     selectedHuman: humans.list[humans.indexOfSelectedHuman],
   };
 }
@@ -96,4 +95,4 @@ export default connect(
   { loadHumans,
     loadLoremIpsum,
     selectHuman,
-  })(Humans);
+  })(UnconnectedHumans);

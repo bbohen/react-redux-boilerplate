@@ -38,7 +38,7 @@ exports[`<UnconnectedCats /> renders some cats in a cats container 1`] = `
 </div>
 `;
 
-exports[`<UnconnectedCats /> should map cat state to props properly 1`] = `
+exports[`<UnconnectedCats /> should map state to props properly 1`] = `
 Object {
   "cats": Array [
     Object {
