@@ -4,16 +4,15 @@ import { Field, reduxForm } from 'redux-form';
 
 import { FormField } from 'components';
 import { clearRandomCat, giveRandomCat } from '../../redux/modules/cats';
+import validation from './validation';
 import ActionText from './ActionText';
 import CatFormHeading from './Heading';
 import CatFormButton from './Button';
 import Form from './Form';
 import Wrapper from './Wrapper';
 
-const FormWithCats = (props) => {
-  const email = value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Thats not an email!' : undefined);
-  const number = value => (value && isNaN(Number(value))) ? 'Thats not a number!' : undefined;
-  const required = value => (value ? undefined : 'Required');
+const UnconnectedFormWithCats = (props) => {
+  const { email, number, required } = validation;
   let result;
 
   if (props.randomCat) {
@@ -35,7 +34,7 @@ const FormWithCats = (props) => {
   return (
     <Wrapper>
       {!result &&
-      <Form onSubmit={props.handleSubmit(props.giveRandomCat)}>
+      <Form onSubmit={props.handleSubmit && props.handleSubmit(props.giveRandomCat)}>
         <CatFormHeading>Form.</CatFormHeading>
         <Field
           label="Name:"
@@ -67,20 +66,20 @@ const FormWithCats = (props) => {
   );
 };
 
-FormWithCats.propTypes = {
+UnconnectedFormWithCats.propTypes = {
   clearRandomCat: PropTypes.func.isRequired,
   giveRandomCat: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   randomCat: PropTypes.string,
 };
 
-FormWithCats.defaultProps = {
+UnconnectedFormWithCats.defaultProps = {
   randomCat: '',
 };
 
 export default connect(
-  state => ({
-    randomCat: state.cats.randomCat,
+  ({ cats = {} }) => ({
+    randomCat: cats.randomCat,
   }),
   {
     clearRandomCat,
@@ -89,5 +88,5 @@ export default connect(
 )(reduxForm(
   {
     form: 'cats',
-  })(FormWithCats),
+  })(UnconnectedFormWithCats),
 );

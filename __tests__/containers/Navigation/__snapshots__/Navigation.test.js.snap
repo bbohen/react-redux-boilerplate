@@ -1,4 +1,4 @@
-exports[`<Navigation /> renders the navigation component 1`] = `
+exports[`<Navigation /> renders the navigation container 1`] = `
 <div
   className="eBndzK">
   <div

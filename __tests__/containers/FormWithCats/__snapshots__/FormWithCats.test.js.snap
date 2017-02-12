@@ -1,0 +1,92 @@
+exports[`<FormWithCats /> renders the FormWithCats container integrated with redux form 1`] = `
+<div
+  className="eMVHAg">
+  <form
+    className="dZhWbL"
+    onSubmit={[Function]}>
+    <h2
+      className="dOqEkG">
+      Form.
+    </h2>
+    <div
+      className="bzWcLi">
+      <div
+        className="bjhZVI">
+        Name:
+      </div>
+      <input
+        className="iZQdaK"
+        name="name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        placeholder=""
+        type="text"
+        value="" />
+    </div>
+    <div
+      className="bzWcLi">
+      <div
+        className="bjhZVI">
+        Email:
+      </div>
+      <input
+        className="iZQdaK"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        placeholder=""
+        type="text"
+        value="" />
+    </div>
+    <div
+      className="bzWcLi">
+      <div
+        className="bjhZVI">
+        Number:
+      </div>
+      <input
+        className="iZQdaK"
+        name="number"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onDragStart={[Function]}
+        onDrop={[Function]}
+        onFocus={[Function]}
+        placeholder=""
+        type="text"
+        value="" />
+    </div>
+    <button
+      className="YjMsv"
+      type="submit">
+      Submit the form.
+    </button>
+  </form>
+</div>
+`;
+
+exports[`<FormWithCats /> renders the FormWithCats container with a random cat provided by redux 1`] = `
+<div
+  className="eMVHAg">
+  <div>
+    <h2
+      className="dOqEkG">
+      Here is your cat.
+      <div
+        className="fpWVTn"
+        onClick={[Function]}>
+        Try again?
+      </div>
+    </h2>
+    <img
+      alt=""
+      src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+  </div>
+</div>
+`;

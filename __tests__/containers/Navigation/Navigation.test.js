@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router';
 import { Navigation } from '../../../src/containers';
 
 describe('<Navigation />', () => {
-  it('renders the navigation component', () => {
+  it('renders the navigation container', () => {
     const WrappedNavigation = (
       <MemoryRouter>
         <Navigation />
