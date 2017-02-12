@@ -9,4 +9,5 @@
 * dynamic theming (demo via color picker)
 * transitions?
 * some sort of content on home?
-* immutable.js
+* lighthouse / PWA?
+* immutable.js?
