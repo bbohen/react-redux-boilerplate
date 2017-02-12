@@ -48,17 +48,29 @@ const HumanModal = ({ age, bio, birthday, imageUrl, email, name, phone, onClick,
   </Modal>;
 
 HumanModal.propTypes = {
-  age: PropTypes.number.isRequired,
-  bio: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  age: PropTypes.number,
+  bio: PropTypes.string,
   birthday: PropTypes.shape({
     mdy: PropTypes.string,
-  }).isRequired,
-  email: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-  phone: PropTypes.string.isRequired,
-  surname: PropTypes.string.isRequired,
+  }),
+  email: PropTypes.string,
+  imageUrl: PropTypes.string,
+  name: PropTypes.string,
+  phone: PropTypes.string,
+  surname: PropTypes.string,
 };
 
+HumanModal.defaultProps = {
+  age: 0,
+  bio: '',
+  birthday: {
+    mdy: 'XX/XX/XXXX',
+  },
+  email: '',
+  imageUrl: '',
+  name: '',
+  phone: '',
+  surname: '',
+};
 export default HumanModal;
