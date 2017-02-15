@@ -1,7 +1,7 @@
 import { handle } from 'redux-pack';
 
-const LOAD_HUMANS = 'boilerplate/humans/LOAD_HUMANS';
-const SELECT_HUMAN = 'boilerplate/humans/SELECT_HUMAN';
+export const LOAD_HUMANS = 'boilerplate/humans/LOAD_HUMANS';
+export const SELECT_HUMAN = 'boilerplate/humans/SELECT_HUMAN';
 
 const intialState = {
   error: null,
@@ -18,10 +18,23 @@ export default function reducer(state = intialState, action = {}) {
   switch (type) {
     case LOAD_HUMANS:
       return handle(state, action, {
-        start: s => ({ ...s, isLoading: true, error: null }),
-        finish: s => ({ ...s, isLoading: false }),
-        failure: s => ({ ...s, error: payload }),
-        success: s => ({ ...s, isLoaded: true, list: payload }),
+        start: s => ({
+          ...s,
+          isLoading: true,
+          error: null,
+        }),
+        failure: s => ({
+          ...s,
+          isLoaded: false,
+          isLoading: false,
+          error: payload,
+        }),
+        success: s => ({
+          ...s,
+          isLoaded: true,
+          isLoading: false,
+          list: payload,
+        }),
       });
     case SELECT_HUMAN:
       return {
