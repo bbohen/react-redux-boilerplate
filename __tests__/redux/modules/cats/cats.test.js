@@ -1,6 +1,7 @@
 import { LIFECYCLE } from 'redux-pack';
 
-import reducer, {
+import { cats as reducer } from './../../../../src/redux/modules';
+import {
   CLEAR_RANDOM_CAT,
   LOAD_CATS,
   LOAD_RANDOM_CAT,

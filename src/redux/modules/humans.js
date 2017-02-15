@@ -3,18 +3,18 @@ import { handle } from 'redux-pack';
 export const LOAD_HUMANS = 'boilerplate/humans/LOAD_HUMANS';
 export const SELECT_HUMAN = 'boilerplate/humans/SELECT_HUMAN';
 
-const intialState = {
+export const initialState = {
   error: null,
   indexOfSelectedHuman: null,
   isLoaded: false,
   isLoading: false,
   list: [],
-  randomCat: '',
   triggered: false,
 };
 
-export default function reducer(state = intialState, action = {}) {
-  const { payload, type } = action;
+export default function reducer(state = initialState, action = {}) {
+  const { payload, type = '' } = action;
+
   switch (type) {
     case LOAD_HUMANS:
       return handle(state, action, {

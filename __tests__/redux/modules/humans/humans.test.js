@@ -1,6 +1,7 @@
 import { LIFECYCLE } from 'redux-pack';
 
-import reducer, {
+import { humans as reducer } from './../../../../src/redux/modules';
+import {
   LOAD_HUMANS,
   SELECT_HUMAN,
   initialState,
