@@ -5,6 +5,7 @@ import reducer, {
   LOAD_CATS,
   LOAD_RANDOM_CAT,
   clearRandomCat,
+  giveRandomCat,
   initialState,
   load,
 } from '../../../../src/redux/modules/cats';
@@ -157,10 +158,10 @@ describe('Redux: cats action creators', () => {
   });
 
   it('load returns the LOAD_CATS action', () => {
-    const expectedAction = {
-      type: LOAD_CATS,
-    };
+    expect(load().type).toEqual(LOAD_CATS);
+  });
 
-    expect(load()).toMatchObject(expectedAction);
+  it('giveRandomCat returns the LOAD_RANDOM_CAT action', () => {
+    expect(giveRandomCat().type).toEqual(LOAD_RANDOM_CAT);
   });
 });
