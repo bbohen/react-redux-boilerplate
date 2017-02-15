@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --open --history-api-fallback",
-    "lint": "eslint src --ext .js --fix",
+    "lint": "eslint src __tests__ --ext .js --fix",
     "test": "jest",
     "test:coverage": "jest --coverage && open coverage/lcov-report/index.html",
     "test:watch": "jest --watch"

@@ -1,10 +1,10 @@
 import { handle } from 'redux-pack';
 
-const CLEAR_RANDOM_CAT = 'boilerplate/cats/CLEAR_RANDOM_CAT';
-const LOAD_CATS = 'boilerplate/cats/LOAD_CATS';
-const LOAD_RANDOM_CAT = 'boilerplate/cats/LOAD_RANDOM_CAT';
+export const CLEAR_RANDOM_CAT = 'boilerplate/cats/CLEAR_RANDOM_CAT';
+export const LOAD_CATS = 'boilerplate/cats/LOAD_CATS';
+export const LOAD_RANDOM_CAT = 'boilerplate/cats/LOAD_RANDOM_CAT';
 
-const intialState = {
+export const initialState = {
   error: null,
   isLoaded: false,
   isLoading: false,
@@ -13,29 +13,51 @@ const intialState = {
   triggered: false,
 };
 
-export default function reducer(state = intialState, action = {}) {
+export default function reducer(state = initialState, action) {
   const { payload, type } = action;
   switch (type) {
     case CLEAR_RANDOM_CAT:
       return {
         ...state,
-        randomCat: '',
+        randomCat: initialState.randomCat,
       };
     case LOAD_CATS:
       return handle(state, action, {
-        start: s => ({ ...s, isLoading: true, error: null }),
-        finish: s => ({ ...s, isLoading: false }),
-        failure: s => ({ ...s, error: payload }),
-        success: s => ({ ...s, isLoaded: true, list: payload.data.children }),
+        start: s => ({
+          ...s,
+          error: null,
+          isLoading: true,
+        }),
+        failure: s => ({
+          ...s,
+          error: payload,
+          isLoading: false,
+        }),
+        success: s => ({
+          ...s,
+          isLoaded: true,
+          isLoading: false,
+          list: payload.data.children,
+        }),
       });
     case LOAD_RANDOM_CAT:
       return handle(state, action, {
-        failure: s => ({ ...s, error: payload }),
+        start: s => ({
+          ...s,
+          error: null,
+          isLoading: true,
+        }),
+        failure: s => ({
+          ...s,
+          error: payload,
+          isLoading: false,
+        }),
         success: (s) => {
           const randomCatData = payload.data[Math.floor(Math.random() * payload.data.length)];
           return {
             ...s,
             isLoaded: true,
+            isLoading: false,
             randomCat: randomCatData.images.original.url,
           };
         },
