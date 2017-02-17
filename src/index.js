@@ -32,3 +32,5 @@ ReactDOM.render(
   <Boilerplate />,
   document.getElementById('mount'),
 );
+
+export default Boilerplate;
