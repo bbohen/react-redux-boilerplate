@@ -3,31 +3,15 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const OfflinePlugin = require('offline-plugin');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProd = nodeEnv === 'production';
 
-const plugins = [
-  new webpack.optimize.CommonsChunkPlugin({
-    name: 'vendor',
-    filename: 'vendor.[chunkhash].js',
-    minChunks: Infinity,
-  }),
-  new webpack.optimize.CommonsChunkPlugin({
-    name: 'meta',
-    chunks: ['vendor'],
-    filename: 'meta.[hash].js',
-  }),
-  new HtmlWebpackPlugin({
-    title: 'React Redux Boilerplate',
-    filename: 'index.html',
-    template: 'index.template.html',
-  }),
-  new webpack.NamedModulesPlugin(),
-];
+let plugins;
 
 if (isProd) {
-  plugins.push(
+  plugins = [
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production')
@@ -54,13 +38,33 @@ if (isProd) {
         comments: false,
       },
     })
-  );
+  ];
 } else {
-  plugins.push(
+  plugins = [
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin()
-  );
+  ];
 }
+
+plugins.push(
+  new webpack.optimize.CommonsChunkPlugin({
+    name: 'vendor',
+    filename: 'vendor.[chunkhash].js',
+    minChunks: Infinity,
+  }),
+  new webpack.optimize.CommonsChunkPlugin({
+    name: 'meta',
+    chunks: ['vendor'],
+    filename: 'meta.[hash].js',
+  }),
+  new HtmlWebpackPlugin({
+    title: 'React Redux Boilerplate',
+    filename: 'index.html',
+    template: 'index.template.html',
+  }),
+  new webpack.NamedModulesPlugin(),
+  new OfflinePlugin()
+);
 
 module.exports = {
   devtool: 'source-map',

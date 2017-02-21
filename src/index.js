@@ -9,6 +9,8 @@ import initializeStore from './redux/init';
 
 import './globalStyles';
 
+require('offline-plugin/runtime').install();
+
 const store = initializeStore();
 
 const Boilerplate = () => (
