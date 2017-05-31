@@ -15,11 +15,11 @@ const Anchor = styled.a`
 `;
 
 const GitHubLink = () =>
-  <Anchor
+  (<Anchor
     href="https://github.com/bbohen/react-redux-boilerplate"
     target="_blank"
   >
     <GitHubIcon />
-  </Anchor>;
+  </Anchor>);
 
 export default GitHubLink;

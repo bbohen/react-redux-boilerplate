@@ -4,11 +4,11 @@ import Wrapper from './Wrapper';
 import Content from './Content';
 
 const Modal = ({ children, onClick }) =>
-  <Wrapper onClick={onClick}>
+  (<Wrapper onClick={onClick}>
     <Content>
       {children}
     </Content>
-  </Wrapper>;
+  </Wrapper>);
 
 Modal.propTypes = {
   children: PropTypes.oneOfType([

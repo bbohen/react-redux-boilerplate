@@ -16,7 +16,7 @@ const activeStyle = {
 };
 
 const Navigation = () =>
-  <Wrapper>
+  (<Wrapper>
     <Content>
       <Heading>
         <LogoLink
@@ -58,7 +58,7 @@ const Navigation = () =>
       </List>
       <GitHubLink />
     </Content>
-  </Wrapper>;
+  </Wrapper>);
 
 const contextTypes = {
   router: PropTypes.object,

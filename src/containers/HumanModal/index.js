@@ -16,7 +16,7 @@ const ModalHeaderHeading = styled(Heading)`
 `;
 
 const HumanModal = ({ age, bio, birthday, imageUrl, email, name, phone, onClick, surname }) =>
-  <Modal onClick={onClick}>
+  (<Modal onClick={onClick}>
     <Header>
       <Image
         alt=""
@@ -45,7 +45,7 @@ const HumanModal = ({ age, bio, birthday, imageUrl, email, name, phone, onClick,
       </Details>
     </Header>
     <div>{bio}</div>
-  </Modal>;
+  </Modal>);
 
 HumanModal.propTypes = {
   onClick: PropTypes.func.isRequired,
