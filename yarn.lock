@@ -1544,6 +1544,14 @@ create-hmac@^1.1.0, create-hmac@^1.1.2:
     create-hash "^1.1.0"
     inherits "^2.0.1"
 
+create-react-class@^15.5.3:
+  version "15.5.3"
+  resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.5.3.tgz#fb0f7cae79339e9a179e194ef466efa3923820fe"
+  dependencies:
+    fbjs "^0.8.9"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 cryptiles@2.x.x:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
@@ -3192,11 +3200,7 @@ istanbul-api@^1.1.1:
     mkdirp "^0.5.1"
     once "^1.4.0"
 
-istanbul-lib-coverage@^1.0.0-alpha.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.0.0.tgz#c3f9b6d226da12424064cce87fce0fb57fdfa7a2"
-
-istanbul-lib-coverage@^1.0.1, istanbul-lib-coverage@^1.1.1:
+istanbul-lib-coverage@^1.0.0-alpha.0, istanbul-lib-coverage@^1.0.1, istanbul-lib-coverage@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.1.1.tgz#73bfb998885299415c93d38a3e9adf784a77a9da"
 
@@ -4078,6 +4082,10 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
 
+object-assign@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+
 object-is@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-is/-/object-is-1.0.1.tgz#0aa60ec9989a0b3ed795cf4d06f62cf1ad6539b6"
@@ -4123,9 +4131,9 @@ obuf@^1.0.0, obuf@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
-offline-plugin@^4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/offline-plugin/-/offline-plugin-4.6.1.tgz#b157545a1cdc54851a3b19fb0c444940a208e132"
+offline-plugin@^4.8.1:
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/offline-plugin/-/offline-plugin-4.8.1.tgz#1d73457081185777179c29d9d416f71077a0197a"
   dependencies:
     deep-extend "^0.4.0"
     ejs "^2.3.4"
@@ -4644,7 +4652,13 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@~15.5.7:
+prop-types@15.5.8:
+  version "15.5.8"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.8.tgz#6b7b2e141083be38c8595aa51fc55775c7199394"
+  dependencies:
+    fbjs "^0.8.9"
+
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@~15.5.7:
   version "15.5.10"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.5.10.tgz#2797dfc3126182e3a95e3dfbb2e893ddd7456154"
   dependencies:
@@ -4768,25 +4782,29 @@ react-dom@^15.5.4:
     object-assign "^4.1.0"
     prop-types "~15.5.7"
 
-react-icon-base@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/react-icon-base/-/react-icon-base-2.0.4.tgz#b6b7662e8b009b270a4f0c213c222f5d6eca3b22"
-
-react-icons@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-2.2.3.tgz#3b4847923065ecb09f8ba7f7e422112de0195196"
+react-icon-base@2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/react-icon-base/-/react-icon-base-2.0.7.tgz#0bd18736bd6ce79ca6d69ce8387a07fb8d4ceffe"
   dependencies:
-    react-icon-base "2.0.4"
+    prop-types "15.5.8"
 
-react-redux@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.2.tgz#3d9878f5f71c6fafcd45de1fbb162ea31f389814"
+react-icons@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-2.2.5.tgz#f942501c21a4cc0456ce2bbee5032c93f6051dcf"
   dependencies:
+    react-icon-base "2.0.7"
+
+react-redux@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.5.tgz#f8e8c7b239422576e52d6b7db06439469be9846a"
+  dependencies:
+    create-react-class "^15.5.3"
     hoist-non-react-statics "^1.0.3"
     invariant "^2.0.0"
     lodash "^4.2.0"
     lodash-es "^4.2.0"
     loose-envify "^1.1.0"
+    prop-types "^15.5.10"
 
 react-router@4.0.0-alpha.6:
   version "4.0.0-alpha.6"
@@ -4913,9 +4931,9 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux-form@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/redux-form/-/redux-form-6.5.0.tgz#8c75ea77018afbabaa02f1389cf6b0e10787c5b8"
+redux-form@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/redux-form/-/redux-form-6.7.0.tgz#9fb0769e76f14febf1dd7686e02c4ab2d6f953aa"
   dependencies:
     deep-equal "^1.0.1"
     es6-error "^4.0.0"
@@ -4924,10 +4942,11 @@ redux-form@^6.5.0:
     is-promise "^2.1.0"
     lodash "^4.17.3"
     lodash-es "^4.17.3"
+    prop-types "^15.5.6"
 
-redux-pack@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/redux-pack/-/redux-pack-0.1.4.tgz#ce6be0f6070b6883494e320ef614c4a09b921c18"
+redux-pack@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/redux-pack/-/redux-pack-0.1.5.tgz#1973b26ef749dfc020e8a61d54cf3e55ec8ae4cd"
   dependencies:
     deline "^1.0.4"
     invariant "^2.2.2"
@@ -5106,15 +5125,15 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.8, rimraf@^2.4.4, rimraf@~2.5.1, rimraf@~2.5.4:
-  version "2.5.4"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
+rimraf@2, rimraf@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
     glob "^7.0.5"
 
-rimraf@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
+rimraf@^2.2.8, rimraf@^2.4.4, rimraf@~2.5.1, rimraf@~2.5.4:
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.5.4.tgz#96800093cbf1a0c86bd95b4625467535c29dfa04"
   dependencies:
     glob "^7.0.5"
 
