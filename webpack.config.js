@@ -62,9 +62,13 @@ plugins.push(
     filename: 'index.html',
     template: 'index.template.html',
   }),
-  new webpack.NamedModulesPlugin(),
-  new OfflinePlugin() // TODO make this PROD only? Being cached elsewhere by webpack-dev-server
+  new webpack.NamedModulesPlugin() // eslint-disable-line
 );
+
+// add this last in production only
+if (isProd) {
+  plugins.push(new OfflinePlugin());
+}
 
 module.exports = {
   devtool: 'source-map',
