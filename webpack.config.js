@@ -63,7 +63,7 @@ plugins.push(
     template: 'index.template.html',
   }),
   new webpack.NamedModulesPlugin(),
-  new OfflinePlugin()
+  new OfflinePlugin() // TODO make this PROD only? Being cached elsewhere by webpack-dev-server
 );
 
 module.exports = {
