@@ -1,32 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Card /> defaults when given no click event 1`] = `
 <div
   className="jkwvgr"
-  onClick={[Function]}>
+  onClick={[Function]}
+>
   <img
     alt=""
     className="bMAZFf"
-    src="" />
+    src=""
+  />
 </div>
 `;
 
 exports[`<Card /> renders a card component 1`] = `
 <div
   className="jkwvgr"
-  onClick={[Function]}>
+  onClick={[Function]}
+>
   <img
     alt=""
     className="bMAZFf"
-    src="" />
+    src=""
+  />
 </div>
 `;
 
 exports[`<Card /> responds to a click event 1`] = `
 <div
   className="jkwvgr"
-  onClick={[Function]}>
+  onClick={[Function]}
+>
   <img
     alt=""
     className="bMAZFf"
-    src="" />
+    src=""
+  />
 </div>
 `;

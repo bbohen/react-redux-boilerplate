@@ -1,8 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<UnconnectedCats /> renders an empty cats container 1`] = `
 <div
-  className="csKSle">
+  className="csKSle"
+>
   <h2
-    className="bhiNsp">
+    className="bhiNsp"
+  >
     Loading you some cats
   </h2>
 </div>
@@ -10,30 +14,37 @@ exports[`<UnconnectedCats /> renders an empty cats container 1`] = `
 
 exports[`<UnconnectedCats /> renders some cats in a cats container 1`] = `
 <div
-  className="csKSle">
+  className="csKSle"
+>
   <div
     className="jkwvgr"
-    onClick={[Function]}>
+    onClick={[Function]}
+  >
     <img
       alt=""
       className="bMAZFf"
-      src="cat-href-1" />
+      src="cat-href-1"
+    />
   </div>
   <div
     className="jkwvgr"
-    onClick={[Function]}>
+    onClick={[Function]}
+  >
     <img
       alt=""
       className="bMAZFf"
-      src="cat-href-2" />
+      src="cat-href-2"
+    />
   </div>
   <div
     className="jkwvgr"
-    onClick={[Function]}>
+    onClick={[Function]}
+  >
     <img
       alt=""
       className="bMAZFf"
-      src="cat-href-3" />
+      src="cat-href-3"
+    />
   </div>
 </div>
 `;

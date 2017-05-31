@@ -1,6 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<NotFound /> renders the not found component 1`] = `
 <h2
-  className="bhiNsp">
+  className="bhiNsp"
+>
   Not Found!
 </h2>
 `;

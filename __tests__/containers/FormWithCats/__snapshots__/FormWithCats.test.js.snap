@@ -1,17 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<FormWithCats /> renders the FormWithCats container integrated with redux form 1`] = `
 <div
-  className="eMVHAg">
+  className="eMVHAg"
+>
   <form
     className="dZhWbL"
-    onSubmit={[Function]}>
+    onSubmit={[Function]}
+  >
     <h2
-      className="dOqEkG">
+      className="dOqEkG"
+    >
       Form.
     </h2>
     <div
-      className="bzWcLi">
+      className="bzWcLi"
+    >
       <div
-        className="bjhZVI">
+        className="bjhZVI"
+      >
         Name:
       </div>
       <input
@@ -24,12 +31,15 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
         onFocus={[Function]}
         placeholder=""
         type="text"
-        value="" />
+        value=""
+      />
     </div>
     <div
-      className="bzWcLi">
+      className="bzWcLi"
+    >
       <div
-        className="bjhZVI">
+        className="bjhZVI"
+      >
         Email:
       </div>
       <input
@@ -42,12 +52,15 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
         onFocus={[Function]}
         placeholder=""
         type="text"
-        value="" />
+        value=""
+      />
     </div>
     <div
-      className="bzWcLi">
+      className="bzWcLi"
+    >
       <div
-        className="bjhZVI">
+        className="bjhZVI"
+      >
         Number:
       </div>
       <input
@@ -60,11 +73,13 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
         onFocus={[Function]}
         placeholder=""
         type="text"
-        value="" />
+        value=""
+      />
     </div>
     <button
       className="YjMsv"
-      type="submit">
+      type="submit"
+    >
       Submit the form.
     </button>
   </form>
@@ -73,20 +88,24 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
 
 exports[`<FormWithCats /> renders the FormWithCats container with a random cat provided by redux 1`] = `
 <div
-  className="eMVHAg">
+  className="eMVHAg"
+>
   <div>
     <h2
-      className="dOqEkG">
+      className="dOqEkG"
+    >
       Here is your cat.
       <div
         className="fpWVTn"
-        onClick={[Function]}>
+        onClick={[Function]}
+      >
         Try again?
       </div>
     </h2>
     <img
       alt=""
-      src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" />
+      src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+    />
   </div>
 </div>
 `;

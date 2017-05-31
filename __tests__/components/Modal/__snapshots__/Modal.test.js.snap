@@ -1,9 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Modal /> defaults when given no click event 1`] = `
 <div
   className="gQVthV"
-  onClick={[Function]}>
+  onClick={[Function]}
+>
   <div
-    className="grVJNr">
+    className="grVJNr"
+  >
     <div>
       A child component
     </div>
@@ -14,9 +18,11 @@ exports[`<Modal /> defaults when given no click event 1`] = `
 exports[`<Modal /> executes a passed click event 1`] = `
 <div
   className="gQVthV"
-  onClick={[Function]}>
+  onClick={[Function]}
+>
   <div
-    className="grVJNr">
+    className="grVJNr"
+  >
     <div>
       A child component
     </div>
@@ -27,9 +33,11 @@ exports[`<Modal /> executes a passed click event 1`] = `
 exports[`<Modal /> renders a child component 1`] = `
 <div
   className="gQVthV"
-  onClick={[Function]}>
+  onClick={[Function]}
+>
   <div
-    className="grVJNr">
+    className="grVJNr"
+  >
     <div>
       A child component
     </div>

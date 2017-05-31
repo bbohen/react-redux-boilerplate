@@ -1,8 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<MainContent /> renders children 1`] = `
 <div
-  className="iFwtGN">
+  className="iFwtGN"
+>
   <div
-    className="ffXoGG">
+    className="ffXoGG"
+  >
     <h1>
       Child 1
     </h1>
