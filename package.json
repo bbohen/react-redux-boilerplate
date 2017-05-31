@@ -28,14 +28,14 @@
     "styled-components": "^1.4.3"
   },
   "devDependencies": {
-    "babel-core": "^6.23.1",
+    "babel-core": "^6.24.1",
     "babel-eslint": "^7.1.1",
     "babel-jest": "^18.0.0",
     "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2015-native-modules": "^6.9.4",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.4",
     "enzyme": "^2.7.1",
     "eslint": "^3.16.0",
