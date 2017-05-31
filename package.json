@@ -14,7 +14,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "normalize.css": "^5.0.0",
+    "normalize.css": "^7.0.0",
     "offline-plugin": "^4.8.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
@@ -26,7 +26,7 @@
     "redux-form": "^6.7.0",
     "redux-pack": "^0.1.5",
     "redux-thunk": "^2.2.0",
-    "styled-components": "^1.4.3"
+    "styled-components": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
