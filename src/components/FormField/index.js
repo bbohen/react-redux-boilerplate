@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React from 'react';
 import Feedback from './Feedback';
 import Input from './Input';
 import Label from './Label';
