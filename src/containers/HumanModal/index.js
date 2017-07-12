@@ -74,4 +74,5 @@ HumanModal.defaultProps = {
   phone: '',
   surname: '',
 };
+
 export default HumanModal;

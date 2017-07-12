@@ -2,10 +2,10 @@
 
 exports[`<UnconnectedCats /> renders an empty cats container 1`] = `
 <div
-  className="csKSle"
+  className="sc-gqjmRU esqlNV"
 >
   <h2
-    className="bhiNsp"
+    className="sc-gzVnrw iPQJMk"
   >
     Loading you some cats
   </h2>
@@ -14,35 +14,35 @@ exports[`<UnconnectedCats /> renders an empty cats container 1`] = `
 
 exports[`<UnconnectedCats /> renders some cats in a cats container 1`] = `
 <div
-  className="csKSle"
+  className="sc-gqjmRU esqlNV"
 >
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="cat-href-1"
     />
   </div>
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="cat-href-2"
     />
   </div>
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="cat-href-3"
     />
   </div>

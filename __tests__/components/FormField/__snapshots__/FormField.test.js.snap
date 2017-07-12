@@ -2,10 +2,10 @@
 
 exports[`<FormField /> renders a form field component 1`] = `
 <div
-  className="bzWcLi"
+  className="sc-bZQynM dAueZL"
 >
   <input
-    className="iZQdaK"
+    className="sc-ifAKCX hOgGaX"
     placeholder=""
     type="text"
   />
@@ -14,15 +14,15 @@ exports[`<FormField /> renders a form field component 1`] = `
 
 exports[`<FormField /> renders a form field with a label 1`] = `
 <div
-  className="bzWcLi"
+  className="sc-bZQynM dAueZL"
 >
   <div
-    className="bjhZVI"
+    className="sc-EHOje dGjzft"
   >
     This field's label
   </div>
   <input
-    className="iZQdaK"
+    className="sc-ifAKCX hOgGaX"
     placeholder=""
     type="text"
   />
@@ -31,20 +31,20 @@ exports[`<FormField /> renders a form field with a label 1`] = `
 
 exports[`<FormField /> renders a form field with a warning 1`] = `
 <div
-  className="bzWcLi"
+  className="sc-bZQynM dAueZL"
 >
   <div
-    className="dbocIQ"
+    className="sc-EHOje VwEMp"
   >
     This field's label
   </div>
   <input
-    className="gnwFvX"
+    className="sc-ifAKCX bhykKs"
     placeholder=""
     type="text"
   />
   <div
-    className="lbPEgS"
+    className="sc-bxivhb gaHCRS"
   >
     You are kind of bad at forms
   </div>
@@ -53,20 +53,20 @@ exports[`<FormField /> renders a form field with a warning 1`] = `
 
 exports[`<FormField /> renders a form field with an error 1`] = `
 <div
-  className="bzWcLi"
+  className="sc-bZQynM dAueZL"
 >
   <div
-    className="bysIRH"
+    className="sc-EHOje jidOzv"
   >
     This field's label
   </div>
   <input
-    className="fdTdmv"
+    className="sc-ifAKCX bYhBXv"
     placeholder=""
     type="text"
   />
   <div
-    className="lkCUOE"
+    className="sc-bxivhb cLWprG"
   >
     You are bad at forms
   </div>

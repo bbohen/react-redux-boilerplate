@@ -2,25 +2,25 @@
 
 exports[`<HumanModal /> renders the human modal container 1`] = `
 <div
-  className="gQVthV"
+  className="sc-gZMcBi kxDDhR"
   onClick={[Function]}
 >
   <div
-    className="grVJNr"
+    className="sc-gqjmRU gFMWya"
   >
     <div
-      className="GDFNg"
+      className="sc-kGXeez hbsICI"
     >
       <img
         alt=""
-        className="iDyoge"
+        className="sc-dxgOiQ kSPbia"
         src=""
       />
       <div
-        className="lbnocX"
+        className="sc-kgoBCf hCXRpp"
       >
         <h2
-          className="bXPJmr"
+          className="sc-ckVGcZ iXdRil sc-htoDjs kvUEzN"
         >
           
           , 
@@ -28,7 +28,7 @@ exports[`<HumanModal /> renders the human modal container 1`] = `
         </h2>
         <div>
           <span
-            className="dQSybc"
+            className="sc-kpOJdX ctNlrt"
           >
             <svg
               fill="currentColor"
@@ -54,7 +54,7 @@ exports[`<HumanModal /> renders the human modal container 1`] = `
         </div>
         <div>
           <span
-            className="dQSybc"
+            className="sc-kpOJdX ctNlrt"
           >
             <svg
               fill="currentColor"
@@ -83,7 +83,7 @@ exports[`<HumanModal /> renders the human modal container 1`] = `
         </div>
         <div>
           <span
-            className="dQSybc"
+            className="sc-kpOJdX ctNlrt"
           >
             <svg
               fill="currentColor"
@@ -118,25 +118,25 @@ exports[`<HumanModal /> renders the human modal container 1`] = `
 
 exports[`<HumanModal /> renders the human modal container with all the proper attributes 1`] = `
 <div
-  className="gQVthV"
+  className="sc-gZMcBi kxDDhR"
   onClick={[Function]}
 >
   <div
-    className="grVJNr"
+    className="sc-gqjmRU gFMWya"
   >
     <div
-      className="GDFNg"
+      className="sc-kGXeez hbsICI"
     >
       <img
         alt=""
-        className="iDyoge"
+        className="sc-dxgOiQ kSPbia"
         src="http://img.com/1234/test.jpg"
       />
       <div
-        className="lbnocX"
+        className="sc-kgoBCf hCXRpp"
       >
         <h2
-          className="bXPJmr"
+          className="sc-ckVGcZ iXdRil sc-htoDjs kvUEzN"
         >
           Test
           , 
@@ -144,7 +144,7 @@ exports[`<HumanModal /> renders the human modal container with all the proper at
         </h2>
         <div>
           <span
-            className="dQSybc"
+            className="sc-kpOJdX ctNlrt"
           >
             <svg
               fill="currentColor"
@@ -170,7 +170,7 @@ exports[`<HumanModal /> renders the human modal container with all the proper at
         </div>
         <div>
           <span
-            className="dQSybc"
+            className="sc-kpOJdX ctNlrt"
           >
             <svg
               fill="currentColor"
@@ -199,7 +199,7 @@ exports[`<HumanModal /> renders the human modal container with all the proper at
         </div>
         <div>
           <span
-            className="dQSybc"
+            className="sc-kpOJdX ctNlrt"
           >
             <svg
               fill="currentColor"

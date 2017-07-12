@@ -2,28 +2,28 @@
 
 exports[`<Humans /> renders a humans container with a selected human in a human modal 1`] = `
 <div
-  className="hbhTwN"
+  className="sc-gqjmRU jvblsP"
 >
   <div
-    className="gQVthV"
+    className="sc-iwsKbI frVmKc"
     onClick={[Function]}
   >
     <div
-      className="grVJNr"
+      className="sc-gZMcBi cnxvDw"
     >
       <div
-        className="GDFNg"
+        className="sc-jTzLTM kLaMur"
       >
         <img
           alt=""
-          className="iDyoge"
+          className="sc-jzJRlG couzzp"
           src="https://uinames.com/api/photos/female/11.jpg"
         />
         <div
-          className="lbnocX"
+          className="sc-VigVT gXtAJK"
         >
           <h2
-            className="bXPJmr"
+            className="sc-cSHVUG cOMvto sc-gzVnrw iPQJMk"
           >
             Lorena
             , 
@@ -31,7 +31,7 @@ exports[`<Humans /> renders a humans container with a selected human in a human 
           </h2>
           <div>
             <span
-              className="dQSybc"
+              className="sc-fjdhpX krPZSu"
             >
               <svg
                 fill="currentColor"
@@ -57,7 +57,7 @@ exports[`<Humans /> renders a humans container with a selected human in a human 
           </div>
           <div>
             <span
-              className="dQSybc"
+              className="sc-fjdhpX krPZSu"
             >
               <svg
                 fill="currentColor"
@@ -86,7 +86,7 @@ exports[`<Humans /> renders a humans container with a selected human in a human 
           </div>
           <div>
             <span
-              className="dQSybc"
+              className="sc-fjdhpX krPZSu"
             >
               <svg
                 fill="currentColor"
@@ -118,22 +118,22 @@ exports[`<Humans /> renders a humans container with a selected human in a human 
     </div>
   </div>
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="https://uinames.com/api/photos/female/11.jpg"
     />
   </div>
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="https://uinames.com/api/photos/female/13.jpg"
     />
   </div>
@@ -142,25 +142,25 @@ exports[`<Humans /> renders a humans container with a selected human in a human 
 
 exports[`<Humans /> renders a humans container with humans 1`] = `
 <div
-  className="hbhTwN"
+  className="sc-gqjmRU jvblsP"
 >
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="https://uinames.com/api/photos/female/11.jpg"
     />
   </div>
   <div
-    className="jkwvgr"
+    className="sc-htpNat cJagyt"
     onClick={[Function]}
   >
     <img
       alt=""
-      className="bMAZFf"
+      className="sc-bwzfXH jwfMIB"
       src="https://uinames.com/api/photos/female/13.jpg"
     />
   </div>
@@ -169,10 +169,10 @@ exports[`<Humans /> renders a humans container with humans 1`] = `
 
 exports[`<Humans /> renders an empty humans container 1`] = `
 <div
-  className="hbhTwN"
+  className="sc-gqjmRU jvblsP"
 >
   <h2
-    className="bhiNsp"
+    className="sc-gzVnrw iPQJMk"
   >
     Loading you some humans
   </h2>

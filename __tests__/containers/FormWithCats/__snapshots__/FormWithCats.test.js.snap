@@ -2,27 +2,27 @@
 
 exports[`<FormWithCats /> renders the FormWithCats container integrated with redux form 1`] = `
 <div
-  className="eMVHAg"
+  className="sc-jzJRlG dPOBZH"
 >
   <form
-    className="dZhWbL"
+    className="sc-fjdhpX sEtGB"
     onSubmit={[Function]}
   >
     <h2
-      className="dOqEkG"
+      className="sc-VigVT fCHYBY sc-gzVnrw iPQJMk"
     >
       Form.
     </h2>
     <div
-      className="bzWcLi"
+      className="sc-bZQynM dAueZL"
     >
       <div
-        className="bjhZVI"
+        className="sc-EHOje dGjzft"
       >
         Name:
       </div>
       <input
-        className="iZQdaK"
+        className="sc-ifAKCX hOgGaX"
         name="name"
         onBlur={[Function]}
         onChange={[Function]}
@@ -35,15 +35,15 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
       />
     </div>
     <div
-      className="bzWcLi"
+      className="sc-bZQynM dAueZL"
     >
       <div
-        className="bjhZVI"
+        className="sc-EHOje dGjzft"
       >
         Email:
       </div>
       <input
-        className="iZQdaK"
+        className="sc-ifAKCX hOgGaX"
         name="email"
         onBlur={[Function]}
         onChange={[Function]}
@@ -56,15 +56,15 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
       />
     </div>
     <div
-      className="bzWcLi"
+      className="sc-bZQynM dAueZL"
     >
       <div
-        className="bjhZVI"
+        className="sc-EHOje dGjzft"
       >
         Number:
       </div>
       <input
-        className="iZQdaK"
+        className="sc-ifAKCX hOgGaX"
         name="number"
         onBlur={[Function]}
         onChange={[Function]}
@@ -77,7 +77,7 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
       />
     </div>
     <button
-      className="YjMsv"
+      className="sc-jTzLTM bvEqpZ sc-bdVaJa dSvWeI"
       type="submit"
     >
       Submit the form.
@@ -88,15 +88,15 @@ exports[`<FormWithCats /> renders the FormWithCats container integrated with red
 
 exports[`<FormWithCats /> renders the FormWithCats container with a random cat provided by redux 1`] = `
 <div
-  className="eMVHAg"
+  className="sc-jzJRlG dPOBZH"
 >
   <div>
     <h2
-      className="dOqEkG"
+      className="sc-VigVT fCHYBY sc-gzVnrw iPQJMk"
     >
       Here is your cat.
       <div
-        className="fpWVTn"
+        className="sc-gqjmRU izGsDq"
         onClick={[Function]}
       >
         Try again?

@@ -3,7 +3,7 @@
 exports[`<Home /> renders the home container 1`] = `
 <div>
   <h2
-    className="bhiNsp"
+    className="sc-htoDjs kvUEzN"
   >
     Hello
   </h2>

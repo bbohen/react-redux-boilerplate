@@ -2,16 +2,16 @@
 
 exports[`<Navigation /> renders the navigation container 1`] = `
 <div
-  className="eBndzK"
+  className="sc-jKJlTe ePbnPl"
 >
   <div
-    className="eIXQOS"
+    className="sc-eNQAEJ cAdSdo"
   >
     <h2
-      className="bhiNsp"
+      className="sc-htoDjs kvUEzN"
     >
       <a
-        className="htNTav"
+        className="sc-iAyFgw ghqChM"
         href="/"
         onClick={[Function]}
         style={
@@ -24,13 +24,13 @@ exports[`<Navigation /> renders the navigation container 1`] = `
       </a>
     </h2>
     <ul
-      className="haBumT"
+      className="sc-kEYyzF jpOIJw"
     >
       <li
-        className="kLWMzb"
+        className="sc-kkGfuU cqhXnG"
       >
         <a
-          className="cphMiI"
+          className="sc-hSdWYo brTCUM"
           href="/cats"
           onClick={[Function]}
           style={Object {}}
@@ -39,10 +39,10 @@ exports[`<Navigation /> renders the navigation container 1`] = `
         </a>
       </li>
       <li
-        className="kLWMzb"
+        className="sc-kkGfuU cqhXnG"
       >
         <a
-          className="cphMiI"
+          className="sc-hSdWYo brTCUM"
           href="/humans"
           onClick={[Function]}
           style={Object {}}
@@ -51,10 +51,10 @@ exports[`<Navigation /> renders the navigation container 1`] = `
         </a>
       </li>
       <li
-        className="kLWMzb"
+        className="sc-kkGfuU cqhXnG"
       >
         <a
-          className="cphMiI"
+          className="sc-hSdWYo brTCUM"
           href="/form"
           onClick={[Function]}
           style={Object {}}
@@ -64,7 +64,7 @@ exports[`<Navigation /> renders the navigation container 1`] = `
       </li>
     </ul>
     <a
-      className="gVNjzE"
+      className="sc-hMqMXs hrRgoP"
       href="https://github.com/bbohen/react-redux-boilerplate"
       target="_blank"
     >
