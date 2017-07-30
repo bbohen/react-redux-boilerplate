@@ -20,6 +20,6 @@ const Input = styled.input`
   flex-grow: 1;
   outline: none;
   padding: 1em;
-`;
+  `;
 
 export default Input;

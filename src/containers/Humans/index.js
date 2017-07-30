@@ -74,7 +74,7 @@ export class UnconnectedHumans extends Component {
             onClick={this.selectHuman}
             imageUrl={photo}
           />)) :
-        <Heading>Loading you some humans</Heading>}
+          <Heading>Loading you some humans</Heading>}
       </Wrapper>
     );
   }

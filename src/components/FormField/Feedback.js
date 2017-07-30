@@ -17,6 +17,6 @@ const Feedback = styled.div`
   width: 100%;
   padding: 1em;
   margin-top: 1em;
-`;
+  `;
 
 export default Feedback;
