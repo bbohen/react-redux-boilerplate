@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Match, Miss } from 'react-router';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { MainContent, NotFound } from 'components';
 import { App, Cats, Humans, FormWithCats, Home, Navigation } from 'containers';
@@ -19,11 +19,13 @@ const Boilerplate = () => (
       <App>
         <Navigation />
         <MainContent>
-          <Match exactly pattern="/" component={Home} />
-          <Match exactly pattern="/cats" component={Cats} />
-          <Match exactly pattern="/form" component={FormWithCats} />
-          <Match exactly pattern="/humans" component={Humans} />
-          <Miss component={NotFound} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/cats" component={Cats} />
+            <Route path="/form" component={FormWithCats} />
+            <Route path="/humans" component={Humans} />
+            <Route component={NotFound} />
+          </Switch>
         </MainContent>
       </App>
     </BrowserRouter>

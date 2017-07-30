@@ -17,16 +17,16 @@
     "normalize.css": "^7.0.0",
     "offline-plugin": "^4.8.3",
     "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "next",
+    "react-dom": "next",
     "react-icons": "^2.2.5",
     "react-redux": "^5.0.5",
-    "react-router": "4.0.0-alpha.6",
+    "react-router-dom": "^4.1.2",
     "redux": "^3.6.0",
     "redux-form": "^7.0.3",
     "redux-pack": "^0.1.5",
     "redux-thunk": "^2.2.0",
-    "styled-components": "^2.0.0"
+    "styled-components": "^2.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

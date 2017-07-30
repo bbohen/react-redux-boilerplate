@@ -13,7 +13,7 @@ const MainContent = ({ children }) => (
 );
 
 MainContent.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
+  children: PropTypes.element,
 };
 
 MainContent.defaultProps = {
