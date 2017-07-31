@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
-import { LIGHT_COLOR } from 'theme';
-
 const Wrapper = styled.div`
-  background-color: ${LIGHT_COLOR};
+  background-color: ${props => props.theme.colors.light}};
   margin: 20px;
   width: 20%;
 `;

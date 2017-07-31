@@ -2,14 +2,12 @@ import React from 'react';
 import GitHubIcon from 'react-icons/lib/fa/github';
 import styled from 'styled-components';
 
-import { PRIMARY_COLOR, SMALLER_SCREEN } from 'theme';
-
 const Anchor = styled.a`
-  color: ${PRIMARY_COLOR};
+  color: ${props => props.theme.colors.primary};
   font-size: 2em;
   line-height: 0;
   margin-left: auto;
-  ${SMALLER_SCREEN`
+  ${props => props.theme.mediaQueries.smallerScreen`
     margin-left: 0;
   `}
 `;

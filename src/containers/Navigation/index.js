@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withTheme } from 'styled-components';
 
 import { Heading } from 'components';
-import { SECONDARY_COLOR } from 'theme';
 
 import Wrapper from './Wrapper';
 import Content from './Content';
@@ -12,17 +12,15 @@ import Item from './Item';
 import LogoLink from './LogoLink';
 import NavLink from './NavLink';
 
-const activeStyle = {
-  textShadow: `-1px -1px 3px ${SECONDARY_COLOR}`,
-};
-
-const Navigation = () =>
-  (<Wrapper>
+const Navigation = (props) => {
+  const activeStyle = {
+    textShadow: `-1px -1px 3px ${props.theme.colors.secondary}`,
+  };
+  return (<Wrapper>
     <Content>
       <Heading>
         <LogoLink
           activeStyle={activeStyle}
-          isActive={({ pathname }) => pathname === '/'}
           to="/"
         >
           React Redux Boilerplate
@@ -32,7 +30,6 @@ const Navigation = () =>
         <Item>
           <NavLink
             activeStyle={activeStyle}
-            isActive={({ pathname }) => pathname === '/cats'}
             to="/cats"
           >
             Cats
@@ -41,7 +38,6 @@ const Navigation = () =>
         <Item>
           <NavLink
             activeStyle={activeStyle}
-            isActive={({ pathname }) => pathname === '/humans'}
             to="/humans"
           >
             Humans
@@ -50,7 +46,6 @@ const Navigation = () =>
         <Item>
           <NavLink
             activeStyle={activeStyle}
-            isActive={({ pathname }) => pathname === '/form'}
             to="/form"
           >
             Form
@@ -60,11 +55,18 @@ const Navigation = () =>
       <GitHubLink />
     </Content>
   </Wrapper>);
+};
 
-const contextTypes = {
+Navigation.contextTypes = {
   router: PropTypes.object,
 };
 
-Navigation.contextTypes = contextTypes;
+Navigation.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      secondary: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
-export default Navigation;
+export default withTheme(Navigation);

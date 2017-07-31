@@ -1,6 +1,5 @@
 ### Todo
 
-* webpack
 * dynamic theming with light/dark theme
 * improve the design / ui / functionality of home, humans & cats
   - home: stats about the build and tools

@@ -1,10 +1,8 @@
-import { Link } from 'react-router-dom';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { PRIMARY_COLOR } from 'theme';
-
-const NavLink = styled(Link)`
-  color: ${PRIMARY_COLOR};
+const NavLink = styled(RRNavLink)`
+  color: ${props => props.theme.colors.primary};
   display: block;
   text-decoration: none;
   text-transform: uppercase;

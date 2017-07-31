@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { App, MainContent } from 'containers';
 import { Heading } from 'components';
@@ -8,6 +9,10 @@ const ErrorHeading = Heading.extend`
 `;
 
 export default class ErrorBoundary extends Component {
+  static propTypes = {
+    children: PropTypes.element.isRequired,
+  }
+
   constructor(props) {
     super(props);
     this.state = {

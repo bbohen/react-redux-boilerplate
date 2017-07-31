@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
-import { LIGHT_COLOR, PRIMARY_COLOR } from 'theme';
-
 const Button = styled.button`
   border: none;
-  background: ${PRIMARY_COLOR};
-  color: ${LIGHT_COLOR};
+  background: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.light};
   padding: 1em;
 `;
 
