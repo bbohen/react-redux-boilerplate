@@ -3,7 +3,7 @@ import GitHubIcon from 'react-icons/lib/fa/github';
 import styled from 'styled-components';
 
 const Anchor = styled.a`
-  color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.secondary};
   font-size: 2em;
   line-height: 0;
   margin-left: auto;

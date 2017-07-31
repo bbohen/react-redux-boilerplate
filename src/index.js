@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import { NotFound } from 'components';
 import { App, Cats, ErrorBoundary, Humans, FormWithCats, Home, MainContent, Navigation } from 'containers';
 import initializeStore from './redux/init';
-import theme from './theme';
+import { light } from './theme';
 
 import './globalStyles';
 
@@ -17,7 +17,7 @@ const store = initializeStore();
 
 const Boilerplate = () => (
   <ReduxProvider store={store}>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={light}>
       <ErrorBoundary>
         <BrowserRouter>
           <App>

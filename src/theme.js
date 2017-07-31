@@ -1,11 +1,6 @@
 import { css } from 'styled-components';
 
-export default {
-  colors: {
-    primary: 'teal',
-    secondary: 'lightSalmon',
-    light: 'ivory',
-  },
+const base = {
   mediaQueries: {
     smallerScreen: (...args) => css`
       @media (max-width: 600px) {
@@ -15,20 +10,20 @@ export default {
   },
 };
 
-// export const smallerScreen = (...args) => css`
-//   @media (max-width: 600px) {
-//     ${css(...args)}
-//   }
-// `;
+export const light = {
+  colors: {
+    background: 'white',
+    primary: '#1C1F24',
+    secondary: 'teal',
+    highlight: 'lightSalmon',
+    light: 'ivory',
+  },
+  ...base,
+};
 
-// Colors
-// export const PRIMARY_COLOR = 'teal';
-// export const SECONDARY_COLOR = 'lightSalmon';
-// export const LIGHT_COLOR = 'ivory';
-
-// Media queries
-// export const SMALLER_SCREEN = (...args) => css`
-//   @media (max-width: 600px) {
-//     ${css(...args)}
-//   }
-// `;
+export const dark = {
+  colors: {
+    background: '#1C1F24',
+  },
+  ...base,
+};

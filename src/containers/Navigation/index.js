@@ -14,7 +14,7 @@ import NavLink from './NavLink';
 
 const Navigation = (props) => {
   const activeStyle = {
-    textShadow: `-1px -1px 3px ${props.theme.colors.secondary}`,
+    color: `${props.theme.colors.secondary}`,
   };
   return (<Wrapper>
     <Content>
