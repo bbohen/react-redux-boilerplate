@@ -86,8 +86,6 @@ export default connect(
     clearRandomCat,
     giveRandomCat,
   },
-)(reduxForm(
-  {
-    form: 'cats',
-  })(UnconnectedFormWithCats),
-);
+)(reduxForm({
+  form: 'cats',
+})(UnconnectedFormWithCats));

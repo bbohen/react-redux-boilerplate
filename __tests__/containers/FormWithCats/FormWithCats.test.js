@@ -1,5 +1,4 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { reducer as formReducer } from 'redux-form';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
@@ -7,6 +6,7 @@ import { Provider } from 'react-redux';
 import FormWithCats from '../../../src/containers/FormWithCats';
 import cats from '../../../src/redux/modules/cats';
 import validation from '../../../src/containers/FormWithCats/validation';
+import testRendererWithProvider from '../../testUtils/testRendererWithProvider';
 
 describe('<FormWithCats />', () => {
   let store;
@@ -21,9 +21,7 @@ describe('<FormWithCats />', () => {
         <FormWithCats />
       </Provider>
     );
-    component = renderer.create(
-      WrappedFormWithCats,
-    );
+    component = testRendererWithProvider(WrappedFormWithCats);
     tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -43,9 +41,7 @@ describe('<FormWithCats />', () => {
         <FormWithCats />
       </Provider>
     );
-    component = renderer.create(
-      WrappedFormWithCats,
-    );
+    component = testRendererWithProvider(WrappedFormWithCats);
     tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();

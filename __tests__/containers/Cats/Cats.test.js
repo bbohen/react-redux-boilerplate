@@ -1,7 +1,7 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 
 import { mapStateToProps, UnconnectedCats } from '../../../src/containers/Cats';
+import testRendererWithProvider from '../../testUtils/testRendererWithProvider';
 
 const mockFunction = jest.fn();
 const mockCats = [
@@ -27,37 +27,31 @@ const mockCats = [
 
 describe('<UnconnectedCats />', () => {
   it('renders an empty cats container', () => {
-    const component = renderer.create(
-      <UnconnectedCats
-        catsAreLoaded={false}
-        loadCats={() => false}
-      />,
-    );
+    const component = testRendererWithProvider(<UnconnectedCats
+      catsAreLoaded={false}
+      loadCats={() => false}
+    />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it('renders some cats in a cats container', () => {
-    const component = renderer.create(
-      <UnconnectedCats
-        cats={mockCats}
-        loadCats={() => false}
-        catsAreLoaded
-      />,
-    );
+    const component = testRendererWithProvider(<UnconnectedCats
+      cats={mockCats}
+      loadCats={() => false}
+      catsAreLoaded
+    />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
   it('tries to get you cats if you have none', () => {
-    renderer.create(
-      <UnconnectedCats
-        catsAreLoaded={false}
-        loadCats={mockFunction}
-      />,
-    );
+    testRendererWithProvider(<UnconnectedCats
+      catsAreLoaded={false}
+      loadCats={mockFunction}
+    />);
 
     expect(mockFunction.mock.calls.length).toBe(1);
   });

@@ -2,11 +2,11 @@
 
 exports[`<Modal /> defaults when given no click event 1`] = `
 <div
-  className="sc-iwsKbI frVmKc"
+  className="sc-htoDjs kpoONz"
   onClick={[Function]}
 >
   <div
-    className="sc-gZMcBi cnxvDw"
+    className="sc-dnqmqq CmCVf"
   >
     <div>
       A child component
@@ -17,11 +17,11 @@ exports[`<Modal /> defaults when given no click event 1`] = `
 
 exports[`<Modal /> executes a passed click event 1`] = `
 <div
-  className="sc-iwsKbI frVmKc"
+  className="sc-htoDjs kpoONz"
   onClick={[Function]}
 >
   <div
-    className="sc-gZMcBi cnxvDw"
+    className="sc-dnqmqq CmCVf"
   >
     <div>
       A child component
@@ -32,11 +32,11 @@ exports[`<Modal /> executes a passed click event 1`] = `
 
 exports[`<Modal /> renders a child component 1`] = `
 <div
-  className="sc-iwsKbI frVmKc"
+  className="sc-htoDjs kpoONz"
   onClick={[Function]}
 >
   <div
-    className="sc-gZMcBi cnxvDw"
+    className="sc-dnqmqq CmCVf"
   >
     <div>
       A child component

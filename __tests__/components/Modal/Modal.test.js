@@ -7,21 +7,17 @@ const mockFunction = jest.fn();
 
 describe('<Modal />', () => {
   it('renders a child component', () => {
-    const component = renderer.create(
-      <Modal>
-        <div>A child component</div>
-      </Modal>,
-    );
+    const component = renderer.create(<Modal>
+      <div>A child component</div>
+    </Modal>);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
   });
   it('defaults when given no click event', () => {
-    const component = renderer.create(
-      <Modal>
-        <div>A child component</div>
-      </Modal>,
-    );
+    const component = renderer.create(<Modal>
+      <div>A child component</div>
+                                      </Modal>);
     let tree = component.toJSON();
 
     tree.props.onClick();
@@ -30,11 +26,9 @@ describe('<Modal />', () => {
     expect(tree).toMatchSnapshot();
   });
   it('executes a passed click event', () => {
-    const component = renderer.create(
-      <Modal onClick={mockFunction}>
-        <div>A child component</div>
-      </Modal>,
-    );
+    const component = renderer.create(<Modal onClick={mockFunction}>
+      <div>A child component</div>
+                                      </Modal>);
     let tree = component.toJSON();
 
     tree.props.onClick();

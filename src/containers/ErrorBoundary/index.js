@@ -17,13 +17,12 @@ export default class ErrorBoundary extends Component {
     super(props);
     this.state = {
       error: null,
-      info: null,
       hasError: false,
     };
   }
 
-  componentDidCatch(error, info) {
-    this.setState({ hasError: true, error, info });
+  componentDidCatch(error) {
+    this.setState({ hasError: true, error });
   }
 
   render() {
@@ -33,7 +32,7 @@ export default class ErrorBoundary extends Component {
           <MainContent>
             <div>
               <ErrorHeading>
-              Whoops!
+                Whoops!
               </ErrorHeading>
               <div>{this.state.error.name}</div>
               <div>{this.state.error.message}</div>

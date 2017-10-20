@@ -1,13 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 
 import { NotFound } from '../../../src/components';
+import testRendererWithProvider from '../../testUtils/testRendererWithProvider';
 
 describe('<NotFound />', () => {
   it('renders the not found component', () => {
-    const component = renderer.create(
-      <NotFound />,
-    );
+    const component = testRendererWithProvider(<NotFound />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();

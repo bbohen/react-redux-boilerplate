@@ -4,8 +4,8 @@ import React from 'react';
 import Wrapper from './Wrapper';
 import Content from './Content';
 
-const Modal = ({ children, onClick }) =>
-  (<Wrapper onClick={onClick}>
+const Modal = ({ children, onClick }) => (
+  <Wrapper onClick={onClick}>
     <Content>
       {children}
     </Content>

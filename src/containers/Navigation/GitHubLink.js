@@ -12,8 +12,8 @@ const Anchor = styled.a`
   `}
 `;
 
-const GitHubLink = () =>
-  (<Anchor
+const GitHubLink = () => (
+  <Anchor
     href="https://github.com/bbohen/react-redux-boilerplate"
     target="_blank"
   >

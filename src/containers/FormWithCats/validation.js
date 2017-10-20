@@ -5,7 +5,7 @@
 
 const validation = {
   email: value => (value && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value) ? 'Thats not an email!' : undefined),
-  number: value => (value && isNaN(Number(value))) ? 'Thats not a number!' : undefined,
+  number: value => (value && isNaN(Number(value))) ? 'Thats not a number!' : undefined, // eslint-disable-line
   required: value => (value ? undefined : 'Required!'),
 };
 

@@ -11,7 +11,5 @@ const composeEnhancers = process.env.NODE_ENV !== 'production' &&
 
 export default () => createStore(
   rootReducer,
-  composeEnhancers(
-    applyMiddleware(thunk, reduxPackMiddleware),
-  ),
+  composeEnhancers(applyMiddleware(thunk, reduxPackMiddleware)),
 );

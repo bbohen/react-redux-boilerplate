@@ -2,7 +2,7 @@
 
 exports[`<Card /> defaults when given no click event 1`] = `
 <div
-  className="sc-htpNat cJagyt"
+  className="sc-htpNat dhgwjW"
   onClick={[Function]}
 >
   <img
@@ -15,7 +15,7 @@ exports[`<Card /> defaults when given no click event 1`] = `
 
 exports[`<Card /> renders a card component 1`] = `
 <div
-  className="sc-htpNat cJagyt"
+  className="sc-htpNat dhgwjW"
   onClick={[Function]}
 >
   <img
@@ -28,7 +28,7 @@ exports[`<Card /> renders a card component 1`] = `
 
 exports[`<Card /> responds to a click event 1`] = `
 <div
-  className="sc-htpNat cJagyt"
+  className="sc-htpNat dhgwjW"
   onClick={[Function]}
 >
   <img
