@@ -2,68 +2,46 @@
 
 exports[`Root component of the app renders as expected without errors 1`] = `
 <div
-  className="sc-gqjmRU oSrJF"
+  className="sc-iwsKbI fEwJkH"
 >
   <div
-    className="sc-jKJlTe ePbnPl"
+    className="sc-kgoBCf jiyEku"
   >
     <div
-      className="sc-eNQAEJ cAdSdo"
+      className="sc-kGXeez kHutoK"
     >
       <h2
-        className="sc-gzVnrw iPQJMk"
+        className="sc-gzVnrw hvTGgK"
       >
         <a
-          className="sc-iAyFgw ghqChM"
+          aria-current={false}
+          className="sc-jKJlTe kwdjuy"
           href="/"
           onClick={[Function]}
-          style={Object {}}
+          style={undefined}
         >
           React Redux Boilerplate
         </a>
       </h2>
       <ul
-        className="sc-kEYyzF jpOIJw"
+        className="sc-dxgOiQ dbrcUD"
       >
         <li
-          className="sc-kkGfuU cqhXnG"
+          className="sc-ckVGcZ jBERXx"
         >
           <a
-            className="sc-hSdWYo brTCUM"
-            href="/cats"
-            onClick={[Function]}
-            style={Object {}}
-          >
-            Cats
-          </a>
-        </li>
-        <li
-          className="sc-kkGfuU cqhXnG"
-        >
-          <a
-            className="sc-hSdWYo brTCUM"
-            href="/humans"
-            onClick={[Function]}
-            style={Object {}}
-          >
-            Humans
-          </a>
-        </li>
-        <li
-          className="sc-kkGfuU cqhXnG"
-        >
-          <a
-            className="sc-hSdWYo brTCUM"
+            aria-current={false}
+            className="sc-eNQAEJ nsvBI"
             href="/form"
             onClick={[Function]}
-            style={Object {}}
+            style={undefined}
           >
             Form
           </a>
         </li>
       </ul>
       <a
-        className="sc-hMqMXs hrRgoP"
+        className="sc-kpOJdX ljxzQP"
         href="https://github.com/bbohen/react-redux-boilerplate"
         target="_blank"
       >
@@ -90,13 +68,13 @@ exports[`Root component of the app renders as expected without errors 1`] = `
     </div>
   </div>
   <div
-    className="sc-htoDjs ftpeoQ"
+    className="sc-kAzzGY cIpKtn"
   >
     <div
-      className="sc-dnqmqq fYqfek"
+      className="sc-chPdSV kmRAWS"
     >
       <h2
-        className="sc-gzVnrw iPQJMk"
+        className="sc-gzVnrw hvTGgK"
       >
         Not Found!
       </h2>

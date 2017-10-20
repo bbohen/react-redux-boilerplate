@@ -37,7 +37,7 @@ export class UnconnectedCats extends Component {
             imageUrl={data.thumbnail}
           />
         )) :
-          <Heading>Loading you some cats</Heading>}
+        <Heading>Loading you some cats</Heading>}
       </Wrapper>
     );
   }

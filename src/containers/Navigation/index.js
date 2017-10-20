@@ -16,45 +16,30 @@ const Navigation = (props) => {
   const activeStyle = {
     color: `${props.theme.colors.secondary}`,
   };
-  return (<Wrapper>
-    <Content>
-      <Heading>
-        <LogoLink
-          activeStyle={activeStyle}
-          to="/"
-        >
-          React Redux Boilerplate
-        </LogoLink>
-      </Heading>
-      <List>
-        <Item>
-          <NavLink
+  return (
+    <Wrapper>
+      <Content>
+        <Heading>
+          <LogoLink
             activeStyle={activeStyle}
-            to="/cats"
+            to="/"
           >
-            Cats
-          </NavLink>
-        </Item>
-        <Item>
-          <NavLink
-            activeStyle={activeStyle}
-            to="/humans"
-          >
-            Humans
-          </NavLink>
-        </Item>
-        <Item>
-          <NavLink
-            activeStyle={activeStyle}
-            to="/form"
-          >
-            Form
-          </NavLink>
-        </Item>
-      </List>
-      <GitHubLink />
-    </Content>
-  </Wrapper>);
+            React Redux Boilerplate
+          </LogoLink>
+        </Heading>
+        <List>
+          <Item>
+            <NavLink
+              activeStyle={activeStyle}
+              to="/form"
+            >
+              Form
+            </NavLink>
+          </Item>
+        </List>
+        <GitHubLink />
+      </Content>
+    </Wrapper>);
 };
 
 Navigation.contextTypes = {

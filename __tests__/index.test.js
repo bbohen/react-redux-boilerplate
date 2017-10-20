@@ -10,9 +10,7 @@ jest.mock('../src/globalStyles.js', () => jest.fn());
 
 describe('Root component of the app', () => {
   it('renders as expected without errors', () => {
-    const component = renderer.create(
-      <Boilerplate />,
-    );
+    const component = renderer.create(<Boilerplate />);
     const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();

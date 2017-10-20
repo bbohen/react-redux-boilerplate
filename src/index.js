@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { NotFound } from 'components';
-import { App, Cats, ErrorBoundary, Humans, FormWithCats, Home, MainContent, Navigation } from 'containers';
+import { App, Cats, ErrorBoundary, FormWithCats, MainContent, Navigation } from 'containers';
 import initializeStore from './redux/init';
 import { light } from './theme';
 
@@ -24,10 +24,8 @@ const Boilerplate = () => (
             <Navigation />
             <MainContent>
               <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/cats" component={Cats} />
+                <Route exact path="/" component={Cats} />
                 <Route path="/form" component={FormWithCats} />
-                <Route path="/humans" component={Humans} />
                 <Route component={NotFound} />
               </Switch>
             </MainContent>

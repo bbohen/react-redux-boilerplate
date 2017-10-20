@@ -5,7 +5,7 @@ exports[`<FormField /> renders a form field component 1`] = `
   className="sc-bZQynM dAueZL"
 >
   <input
-    className="sc-ifAKCX hOgGaX"
+    className="sc-ifAKCX cnCCVj"
     placeholder=""
     type="text"
   />
@@ -17,12 +17,12 @@ exports[`<FormField /> renders a form field with a label 1`] = `
   className="sc-bZQynM dAueZL"
 >
   <div
-    className="sc-EHOje dGjzft"
+    className="sc-EHOje hCmDXA"
   >
     This field's label
   </div>
   <input
-    className="sc-ifAKCX hOgGaX"
+    className="sc-ifAKCX cnCCVj"
     placeholder=""
     type="text"
   />
@@ -39,12 +39,12 @@ exports[`<FormField /> renders a form field with a warning 1`] = `
     This field's label
   </div>
   <input
-    className="sc-ifAKCX bhykKs"
+    className="sc-ifAKCX hLehFA"
     placeholder=""
     type="text"
   />
   <div
-    className="sc-bxivhb gaHCRS"
+    className="sc-bxivhb iOrRap"
   >
     You are kind of bad at forms
   </div>
@@ -56,17 +56,17 @@ exports[`<FormField /> renders a form field with an error 1`] = `
   className="sc-bZQynM dAueZL"
 >
   <div
-    className="sc-EHOje jidOzv"
+    className="sc-EHOje dGjzft"
   >
     This field's label
   </div>
   <input
-    className="sc-ifAKCX bYhBXv"
+    className="sc-ifAKCX hfSsuI"
     placeholder=""
     type="text"
   />
   <div
-    className="sc-bxivhb cLWprG"
+    className="sc-bxivhb ddjxUM"
   >
     You are bad at forms
   </div>

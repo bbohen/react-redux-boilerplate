@@ -3,7 +3,5 @@ export Cats from './Cats';
 export ErrorBoundary from './ErrorBoundary';
 export FormWithCats from './FormWithCats';
 export Home from './Home';
-export Humans from './Humans';
-export HumanModal from './HumanModal';
 export MainContent from './MainContent';
 export Navigation from './Navigation';

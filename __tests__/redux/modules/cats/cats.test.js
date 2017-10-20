@@ -119,10 +119,7 @@ describe('Redux: cats reducer', () => {
 
     expect(afterState.isLoaded).toBe(true);
     expect(afterState.isLoading).toBe(false);
-    expect(afterState.randomCat).toEqual(
-      // random cat is a random gif from the giphy response
-      expect.stringMatching(gifUrlRegex),
-    );
+    expect(afterState.randomCat).toEqual(expect.stringMatching(gifUrlRegex));
   });
 
   it('dispatching LOAD_RANDOM_CATS handles random cat failure', () => {
